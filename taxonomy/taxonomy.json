@@ -1,0 +1,814 @@
+{
+  "name": "Microsoft Ignite 2026 announcement taxonomy",
+  "version": "1.0",
+  "updated": "2026-11-18",
+  "dimensions": {
+    "product_family": {
+      "definition": "Top level grouping. Hierarchy: product_family > product > capability_area.",
+      "values": [
+        {
+          "name": "Microsoft Copilot",
+          "definition": "Microsoft 365 Copilot, the Copilot app, Office in Copilot, Cowork, Code, Autopilot, SharePoint, OneDrive and Teams experiences.",
+          "products": [
+            {
+              "name": "Autopilot",
+              "capability_areas": [
+                "Autonomous agents"
+              ]
+            },
+            {
+              "name": "Copilot Code",
+              "capability_areas": [
+                "App building"
+              ]
+            },
+            {
+              "name": "Copilot Cowork",
+              "capability_areas": [
+                "Agentic work"
+              ]
+            },
+            {
+              "name": "Copilot Managed Runtime",
+              "capability_areas": [
+                "Agent building",
+                "App hosting"
+              ]
+            },
+            {
+              "name": "Copilot Pages",
+              "capability_areas": [
+                "Content creation"
+              ]
+            },
+            {
+              "name": "Copilot for Sales",
+              "capability_areas": [
+                "Role skills"
+              ]
+            },
+            {
+              "name": "Copilot in OneDrive",
+              "capability_areas": [
+                "Content"
+              ]
+            },
+            {
+              "name": "Copilot in OneNote",
+              "capability_areas": [
+                "Content creation"
+              ]
+            },
+            {
+              "name": "Copilot plugins",
+              "capability_areas": [
+                "Extensibility"
+              ]
+            },
+            {
+              "name": "Microsoft Copilot app",
+              "capability_areas": [
+                "Collaboration",
+                "Copilot experience",
+                "Office apps",
+                "Proactive assistance"
+              ]
+            },
+            {
+              "name": "Microsoft Teams",
+              "capability_areas": [
+                "Meeting security"
+              ]
+            },
+            {
+              "name": "SharePoint",
+              "capability_areas": [
+                "Content governance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Agents and agent governance",
+          "definition": "Building, running, governing and paying for agents: Agent 365, Copilot Studio, Windows 365 for Agents.",
+          "products": [
+            {
+              "name": "Microsoft Agent 365",
+              "capability_areas": [
+                "Adoption",
+                "Connected platforms",
+                "Discovery",
+                "FinOps for AI",
+                "Governance",
+                "Observability",
+                "Risk"
+              ]
+            },
+            {
+              "name": "Microsoft Copilot Studio",
+              "capability_areas": [
+                "Agent building"
+              ]
+            },
+            {
+              "name": "Windows 365 for Agents",
+              "capability_areas": [
+                "Computer use"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Microsoft IQ",
+          "definition": "Enterprise context layer: Microsoft IQ, Work IQ, Fabric IQ, Foundry IQ, Web IQ.",
+          "products": [
+            {
+              "name": "Fabric IQ",
+              "capability_areas": [
+                "Business context"
+              ]
+            },
+            {
+              "name": "Foundry IQ",
+              "capability_areas": [
+                "Knowledge retrieval"
+              ]
+            },
+            {
+              "name": "Microsoft IQ",
+              "capability_areas": [
+                "Enterprise context"
+              ]
+            },
+            {
+              "name": "Web IQ",
+              "capability_areas": [
+                "Web grounding"
+              ]
+            },
+            {
+              "name": "Work IQ",
+              "capability_areas": [
+                "Context and actions"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AI models and Microsoft Foundry",
+          "definition": "Models (MAI, OpenAI, Meta, Microsoft-Decision), Microsoft Foundry platform services and AI silicon.",
+          "products": [
+            {
+              "name": "Dragon Copilot",
+              "capability_areas": [
+                "Clinical documentation"
+              ]
+            },
+            {
+              "name": "MAI models",
+              "capability_areas": [
+                "Coding models",
+                "Image models",
+                "Model access",
+                "Productivity models",
+                "Security models",
+                "Speech models"
+              ]
+            },
+            {
+              "name": "Maia",
+              "capability_areas": [
+                "AI silicon"
+              ]
+            },
+            {
+              "name": "Microsoft Foundry",
+              "capability_areas": [
+                "Agent harness",
+                "Continuous improvement",
+                "Model catalogue",
+                "Model routing"
+              ]
+            },
+            {
+              "name": "Microsoft-Decision-1.1",
+              "capability_areas": [
+                "Decision models"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Azure infrastructure and operations",
+          "definition": "Azure compute, operations, migration, AI infrastructure, Azure Local, sovereign cloud and Windows Server.",
+          "products": [
+            {
+              "name": "Azure AI infrastructure",
+              "capability_areas": [
+                "AI infrastructure"
+              ]
+            },
+            {
+              "name": "Azure Catalyst",
+              "capability_areas": [
+                "Migration and modernisation"
+              ]
+            },
+            {
+              "name": "Azure Chaos Studio",
+              "capability_areas": [
+                "Resilience"
+              ]
+            },
+            {
+              "name": "Azure Copilot",
+              "capability_areas": [
+                "Agentic operations"
+              ]
+            },
+            {
+              "name": "Azure Local",
+              "capability_areas": [
+                "Confidential computing",
+                "Sovereign and hybrid"
+              ]
+            },
+            {
+              "name": "Azure Monitor",
+              "capability_areas": [
+                "Observability"
+              ]
+            },
+            {
+              "name": "Azure Resource Manager",
+              "capability_areas": [
+                "Agentic operations"
+              ]
+            },
+            {
+              "name": "Azure SRE Agent",
+              "capability_areas": [
+                "Agentic operations"
+              ]
+            },
+            {
+              "name": "Azure Virtual Machines",
+              "capability_areas": [
+                "Compute"
+              ]
+            },
+            {
+              "name": "Azure Workload Center",
+              "capability_areas": [
+                "SAP and Oracle"
+              ]
+            },
+            {
+              "name": "Azure confidential computing",
+              "capability_areas": [
+                "Confidential computing"
+              ]
+            },
+            {
+              "name": "Microsoft Sovereign Cloud",
+              "capability_areas": [
+                "Sovereignty"
+              ]
+            },
+            {
+              "name": "Windows Server",
+              "capability_areas": [
+                "Server OS"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Data and databases",
+          "definition": "Microsoft Fabric, Power BI and Azure databases (HorizonDB, SQL, Cosmos DB, DocumentDB, PostgreSQL, Redis).",
+          "products": [
+            {
+              "name": "Azure Cosmos DB",
+              "capability_areas": [
+                "Databases"
+              ]
+            },
+            {
+              "name": "Azure Database for PostgreSQL",
+              "capability_areas": [
+                "Databases"
+              ]
+            },
+            {
+              "name": "Azure DocumentDB",
+              "capability_areas": [
+                "Databases"
+              ]
+            },
+            {
+              "name": "Azure HorizonDB",
+              "capability_areas": [
+                "Databases"
+              ]
+            },
+            {
+              "name": "Azure Managed Redis",
+              "capability_areas": [
+                "Databases"
+              ]
+            },
+            {
+              "name": "Azure SQL",
+              "capability_areas": [
+                "Databases"
+              ]
+            },
+            {
+              "name": "Microsoft Fabric",
+              "capability_areas": [
+                "App development",
+                "Database management",
+                "Databases"
+              ]
+            },
+            {
+              "name": "Power BI",
+              "capability_areas": [
+                "Data apps"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Developer tools and GitHub",
+          "definition": "GitHub Copilot, GitHub Enterprise, Copilot SDK and developer tooling.",
+          "products": [
+            {
+              "name": "GitHub Copilot",
+              "capability_areas": [
+                "Code review",
+                "Copilot app",
+                "Models",
+                "Modernisation",
+                "Quality"
+              ]
+            },
+            {
+              "name": "GitHub Enterprise",
+              "capability_areas": [
+                "Licensing"
+              ]
+            },
+            {
+              "name": "Microsoft Copilot SDK",
+              "capability_areas": [
+                "Agent runtime"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Security, identity and compliance",
+          "definition": "Microsoft Perception, Defender, Sentinel, Entra, Purview, Baseline Security Mode, MDASH and responsible AI.",
+          "products": [
+            {
+              "name": "Codename MDASH",
+              "capability_areas": [
+                "Code security"
+              ]
+            },
+            {
+              "name": "Microsoft Agent 365",
+              "capability_areas": [
+                "Security partnerships"
+              ]
+            },
+            {
+              "name": "Microsoft Baseline Security Mode",
+              "capability_areas": [
+                "Secure by default"
+              ]
+            },
+            {
+              "name": "Microsoft Defender",
+              "capability_areas": [
+                "Agent security",
+                "Attack disruption",
+                "Endpoint security",
+                "On-premises security",
+                "Security operations"
+              ]
+            },
+            {
+              "name": "Microsoft Entra",
+              "capability_areas": [
+                "Access control",
+                "Agent identity",
+                "Authentication",
+                "Platform"
+              ]
+            },
+            {
+              "name": "Microsoft Perception",
+              "capability_areas": [
+                "Agentic security"
+              ]
+            },
+            {
+              "name": "Microsoft Purview",
+              "capability_areas": [
+                "Classification",
+                "Data security for AI",
+                "Network DLP"
+              ]
+            },
+            {
+              "name": "Microsoft Sentinel",
+              "capability_areas": [
+                "SIEM connectors"
+              ]
+            },
+            {
+              "name": "Responsible AI",
+              "capability_areas": [
+                "AI governance"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Windows, Windows 365 and endpoint management",
+          "definition": "Windows 11, Windows 365, Intune and endpoint management.",
+          "products": [
+            {
+              "name": "Microsoft Intune",
+              "capability_areas": [
+                "Endpoint management"
+              ]
+            },
+            {
+              "name": "Windows 11",
+              "capability_areas": [
+                "Agent containment",
+                "Copilot on Windows",
+                "Platform security"
+              ]
+            },
+            {
+              "name": "Windows 365",
+              "capability_areas": [
+                "Cloud PC"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Microsoft Edge",
+          "definition": "Edge for Business security and governed AI browsing.",
+          "products": [
+            {
+              "name": "Edge for Business",
+              "capability_areas": [
+                "Browser security",
+                "Governed AI"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Business applications",
+          "definition": "Dynamics 365, Power Platform and contact centre.",
+          "products": [
+            {
+              "name": "Dynamics 365",
+              "capability_areas": [
+                "Copilot plugins",
+                "Migration"
+              ]
+            },
+            {
+              "name": "Dynamics 365 Contact Center",
+              "capability_areas": [
+                "Contact centre"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Partnerships and ecosystem",
+          "definition": "Strategic partnerships announced at Ignite (for example Salesforce).",
+          "products": [
+            {
+              "name": "Salesforce",
+              "capability_areas": [
+                "Partnership"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Licensing, pricing and partner programme",
+          "definition": "Licensing, pricing, billing, retirements and partner programme changes.",
+          "products": [
+            {
+              "name": "AI Builder",
+              "capability_areas": [
+                "Retirement"
+              ]
+            },
+            {
+              "name": "Business Central",
+              "capability_areas": [
+                "Bundles"
+              ]
+            },
+            {
+              "name": "Copilot Business",
+              "capability_areas": [
+                "Billing"
+              ]
+            },
+            {
+              "name": "Microsoft 365 Copilot",
+              "capability_areas": [
+                "Licensing"
+              ]
+            },
+            {
+              "name": "Microsoft AI Cloud Partner Program",
+              "capability_areas": [
+                "Partner programme"
+              ]
+            },
+            {
+              "name": "Microsoft Purview",
+              "capability_areas": [
+                "Retirement"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Industry solutions",
+          "definition": "Industry-specific solutions (healthcare, financial services, public sector and others).",
+          "products": []
+        }
+      ]
+    },
+    "announcement_type": {
+      "definition": "What kind of news it is.",
+      "values": [
+        {
+          "name": "New product",
+          "definition": "A product or service that did not exist before."
+        },
+        {
+          "name": "New capability",
+          "definition": "A new feature in an existing product."
+        },
+        {
+          "name": "New model",
+          "definition": "A new AI model or model family."
+        },
+        {
+          "name": "New version",
+          "definition": "A new major version of an existing product."
+        },
+        {
+          "name": "Status change",
+          "definition": "A move between release stages, usually preview to GA."
+        },
+        {
+          "name": "Update",
+          "definition": "A bundle of improvements to an existing product."
+        },
+        {
+          "name": "Mixed",
+          "definition": "One announcement with parts at different stages."
+        },
+        {
+          "name": "Default change",
+          "definition": "A change to default settings or behaviour."
+        },
+        {
+          "name": "Pricing / licensing",
+          "definition": "Price, SKU, billing or licence terms."
+        },
+        {
+          "name": "Retirement",
+          "definition": "End of sale, end of support or removal."
+        },
+        {
+          "name": "Partnership",
+          "definition": "A named commercial or technical partnership."
+        },
+        {
+          "name": "Industry initiative",
+          "definition": "A multi-organisation effort or standard."
+        },
+        {
+          "name": "New programme",
+          "definition": "A customer or partner programme."
+        },
+        {
+          "name": "Milestone",
+          "definition": "A usage or scale figure shared on stage."
+        }
+      ]
+    },
+    "status_category": {
+      "definition": "Normalised release stage used for filtering. The free-text status column keeps Microsoft's own wording.",
+      "values": [
+        {
+          "name": "GA",
+          "definition": "Generally available for production use."
+        },
+        {
+          "name": "Public preview",
+          "definition": "Open preview, any eligible customer can try it."
+        },
+        {
+          "name": "Private or limited preview",
+          "definition": "Invitation, eligibility or limited-access preview."
+        },
+        {
+          "name": "Preview (stage not stated)",
+          "definition": "Microsoft says preview without saying public or private."
+        },
+        {
+          "name": "Frontier",
+          "definition": "Microsoft's early-access programme for Copilot and agents."
+        },
+        {
+          "name": "Coming soon",
+          "definition": "Announced with no current access."
+        },
+        {
+          "name": "Mixed",
+          "definition": "Parts of the announcement sit at different stages; see the status column."
+        },
+        {
+          "name": "Licensing change",
+          "definition": "A dated licensing or billing change."
+        },
+        {
+          "name": "Retirement",
+          "definition": "Being retired or removed."
+        },
+        {
+          "name": "Announced",
+          "definition": "Announced with no stage given."
+        },
+        {
+          "name": "Milestone",
+          "definition": "A figure, not a product change."
+        }
+      ]
+    },
+    "audience": {
+      "definition": "Primary reader the announcement is aimed at.",
+      "values": [
+        {
+          "name": "Business decision makers",
+          "definition": "Budget holders and leaders deciding on spend and value."
+        },
+        {
+          "name": "IT pros and admins",
+          "definition": "People who deploy, manage and govern."
+        },
+        {
+          "name": "Security teams",
+          "definition": "SOC, identity, data security and compliance."
+        },
+        {
+          "name": "Developers",
+          "definition": "People who build apps, agents and integrations."
+        },
+        {
+          "name": "Data professionals",
+          "definition": "Analysts, data engineers and BI developers."
+        },
+        {
+          "name": "End users",
+          "definition": "Everyday users of Copilot and Microsoft 365."
+        },
+        {
+          "name": "Partners",
+          "definition": "Microsoft partners, CSPs and MSPs."
+        }
+      ]
+    },
+    "industry": {
+      "definition": "Industry focus where stated; most items are cross-industry.",
+      "values": [
+        {
+          "name": "Cross-industry",
+          "definition": "No specific industry."
+        },
+        {
+          "name": "Healthcare",
+          "definition": "Clinical and health organisations."
+        },
+        {
+          "name": "Financial services",
+          "definition": "Banks, insurers, capital markets."
+        },
+        {
+          "name": "Public sector",
+          "definition": "Government, defence, sovereign requirements."
+        },
+        {
+          "name": "Retail",
+          "definition": "Retail and consumer goods."
+        },
+        {
+          "name": "Manufacturing",
+          "definition": "Manufacturing and industrial."
+        }
+      ]
+    },
+    "ignite_scope": {
+      "definition": "Whether the item was announced at Ignite or is adjacent news from the same period.",
+      "values": [
+        {
+          "name": "Ignite 2026",
+          "definition": "Announced at Ignite 2026 (live news, Book of News or Ignite-dated official blogs)."
+        },
+        {
+          "name": "Adjacent (November partner announcements)",
+          "definition": "Partner Center or licensing news published in November 2026."
+        },
+        {
+          "name": "Adjacent (28 Oct 2026, pre-Ignite)",
+          "definition": "Published before Ignite but directly relevant."
+        },
+        {
+          "name": "Ignite window (docs)",
+          "definition": "Documented in product docs during the Ignite window."
+        }
+      ]
+    },
+    "verification": {
+      "definition": "Which kind of source the row rests on.",
+      "values": [
+        {
+          "name": "Book of News",
+          "definition": "Confirmed in the Ignite 2026 Book of News."
+        },
+        {
+          "name": "Live news + official blog",
+          "definition": "Confirmed on the live news blog and an official blog."
+        },
+        {
+          "name": "Official blog",
+          "definition": "Confirmed on an official Microsoft, Azure, Windows, Dynamics 365 or Tech Community blog."
+        },
+        {
+          "name": "Microsoft AI blog",
+          "definition": "Confirmed on microsoft.ai news."
+        },
+        {
+          "name": "Book of News + Microsoft AI blog",
+          "definition": "Confirmed in the Book of News and on microsoft.ai."
+        },
+        {
+          "name": "Live news + Microsoft AI blog",
+          "definition": "Confirmed on the live news blog and on microsoft.ai."
+        },
+        {
+          "name": "Live news + Microsoft Source",
+          "definition": "Confirmed on the live news blog and Microsoft Source."
+        },
+        {
+          "name": "GitHub changelog",
+          "definition": "Confirmed on the GitHub changelog."
+        },
+        {
+          "name": "Partner Center announcements",
+          "definition": "Confirmed on Microsoft Learn Partner Center announcements."
+        },
+        {
+          "name": "Official docs (Defender for Office 365 what's new)",
+          "definition": "Confirmed in Microsoft Learn docs."
+        },
+        {
+          "name": "Parallel deep research (official blog)",
+          "definition": "Found by Parallel deep research citing an official blog; to be re-read on the next run."
+        }
+      ]
+    },
+    "region": {
+      "definition": "Region availability where Microsoft states it; otherwise 'Not stated'.",
+      "values": [
+        {
+          "name": "Not stated",
+          "definition": "Microsoft did not give regions."
+        },
+        {
+          "name": "Named regions",
+          "definition": "See the region column."
+        }
+      ]
+    }
+  }
+}
