@@ -1,0 +1,279 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/anorthernman-developer/ignite-2026-announcements/metadata/schema.json",
+  "title": "Ignite 2026 announcement",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "event",
+    "ignite_scope",
+    "product_family",
+    "product",
+    "capability_area",
+    "announcement_type",
+    "status",
+    "status_category",
+    "availability",
+    "audience",
+    "industry",
+    "region",
+    "summary",
+    "source_url",
+    "verification",
+    "first_seen",
+    "last_updated"
+  ],
+  "properties": {
+    "id": {
+      "description": "Stable identifier IGN26-<FAMILY>-<NNN>. Never reused.",
+      "type": "string",
+      "pattern": "^IGN26-[A-Z]+-\\d{3}$",
+      "examples": [
+        "IGN26-SEC-005"
+      ]
+    },
+    "title": {
+      "description": "Short plain title in sentence case.",
+      "type": "string",
+      "examples": [
+        "Microsoft Perception generally available"
+      ]
+    },
+    "announced_date": {
+      "description": "Date announced at Ignite; blank for adjacent items.",
+      "type": "string",
+      "pattern": "^(\\d{4}-\\d{2}-\\d{2})?$",
+      "examples": [
+        "2026-11-17"
+      ]
+    },
+    "event": {
+      "description": "Event name.",
+      "type": "string",
+      "examples": [
+        "Microsoft Ignite 2026"
+      ]
+    },
+    "ignite_scope": {
+      "description": "Ignite 2026 or an Adjacent value. See taxonomy.",
+      "type": "string",
+      "enum": [
+        "Ignite 2026",
+        "Adjacent (November partner announcements)",
+        "Adjacent (28 Oct 2026, pre-Ignite)",
+        "Ignite window (docs)"
+      ],
+      "examples": [
+        "Ignite 2026"
+      ]
+    },
+    "product_family": {
+      "description": "Taxonomy level 1.",
+      "type": "string",
+      "enum": [
+        "Microsoft Copilot",
+        "Agents and agent governance",
+        "Microsoft IQ",
+        "AI models and Microsoft Foundry",
+        "Azure infrastructure and operations",
+        "Data and databases",
+        "Developer tools and GitHub",
+        "Security, identity and compliance",
+        "Windows, Windows 365 and endpoint management",
+        "Microsoft Edge",
+        "Business applications",
+        "Partnerships and ecosystem",
+        "Licensing, pricing and partner programme",
+        "Industry solutions"
+      ],
+      "examples": [
+        "Security, identity and compliance"
+      ]
+    },
+    "product": {
+      "description": "Taxonomy level 2, Microsoft's product name.",
+      "type": "string",
+      "examples": [
+        "Microsoft Defender"
+      ]
+    },
+    "capability_area": {
+      "description": "Taxonomy level 3.",
+      "type": "string",
+      "examples": [
+        "Attack disruption"
+      ]
+    },
+    "announcement_type": {
+      "description": "Kind of news. See taxonomy.",
+      "type": "string",
+      "enum": [
+        "New product",
+        "New capability",
+        "New model",
+        "New version",
+        "Status change",
+        "Update",
+        "Mixed",
+        "Default change",
+        "Pricing / licensing",
+        "Retirement",
+        "Partnership",
+        "Industry initiative",
+        "New programme",
+        "Milestone"
+      ],
+      "examples": [
+        "New capability"
+      ]
+    },
+    "status": {
+      "description": "Release stage in Microsoft's own words, including mixed stages.",
+      "type": "string",
+      "examples": [
+        "GA; SIEM breadth preview"
+      ]
+    },
+    "status_category": {
+      "description": "Normalised stage for filtering.",
+      "type": "string",
+      "enum": [
+        "GA",
+        "Public preview",
+        "Private or limited preview",
+        "Preview (stage not stated)",
+        "Frontier",
+        "Coming soon",
+        "Mixed",
+        "Licensing change",
+        "Retirement",
+        "Announced",
+        "Milestone"
+      ],
+      "examples": [
+        "Mixed"
+      ]
+    },
+    "availability": {
+      "description": "Stated availability date or window; 'Not stated' when absent.",
+      "type": "string",
+      "examples": [
+        "GA December 2026"
+      ]
+    },
+    "audience": {
+      "description": "Primary audience.",
+      "type": "string",
+      "enum": [
+        "Business decision makers",
+        "IT pros and admins",
+        "Security teams",
+        "Developers",
+        "Data professionals",
+        "End users",
+        "Partners"
+      ],
+      "examples": [
+        "Security teams"
+      ]
+    },
+    "industry": {
+      "description": "Industry focus or Cross-industry.",
+      "type": "string",
+      "enum": [
+        "Cross-industry",
+        "Healthcare",
+        "Financial services",
+        "Public sector",
+        "Retail",
+        "Manufacturing"
+      ],
+      "examples": [
+        "Healthcare"
+      ]
+    },
+    "licensing": {
+      "description": "Licence, SKU, credit or price conditions where stated.",
+      "type": "string",
+      "examples": [
+        "Microsoft 365 E5 or E7"
+      ]
+    },
+    "region": {
+      "description": "Region availability or 'Not stated'.",
+      "type": "string",
+      "examples": [
+        "14 regions incl. UK South"
+      ]
+    },
+    "tags": {
+      "description": "Free keywords for search.",
+      "type": "string",
+      "examples": [
+        "dlp;copilot"
+      ]
+    },
+    "summary": {
+      "description": "One or two plain sentences on what was announced.",
+      "type": "string"
+    },
+    "source_url": {
+      "description": "Primary official source. Every row must have one.",
+      "type": "string",
+      "pattern": "^https?://.+$",
+      "examples": [
+        "https://news.microsoft.com/events/ignite/2026/book-of-news/"
+      ]
+    },
+    "secondary_source": {
+      "description": "Second official source, usually the product blog.",
+      "type": "string",
+      "pattern": "^(https?://.+)?$"
+    },
+    "verification": {
+      "description": "Kind of source the row rests on.",
+      "type": "string",
+      "enum": [
+        "Book of News",
+        "Live news + official blog",
+        "Official blog",
+        "Microsoft AI blog",
+        "Book of News + Microsoft AI blog",
+        "Live news + Microsoft AI blog",
+        "Live news + Microsoft Source",
+        "GitHub changelog",
+        "Partner Center announcements",
+        "Official docs (Defender for Office 365 what's new)",
+        "Parallel deep research (official blog)"
+      ],
+      "examples": [
+        "Book of News"
+      ]
+    },
+    "related": {
+      "description": "Other rows for the same product.",
+      "type": "string",
+      "examples": [
+        "IGN26-SEC-006;IGN26-SEC-007"
+      ]
+    },
+    "first_seen": {
+      "description": "Run date the row was first captured.",
+      "type": "string",
+      "pattern": "^(\\d{4}-\\d{2}-\\d{2})?$",
+      "examples": [
+        "2026-11-18"
+      ]
+    },
+    "last_updated": {
+      "description": "Run date the row last changed.",
+      "type": "string",
+      "pattern": "^(\\d{4}-\\d{2}-\\d{2})?$",
+      "examples": [
+        "2026-11-18"
+      ]
+    }
+  }
+}
