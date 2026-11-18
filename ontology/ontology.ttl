@@ -1,0 +1,77 @@
+@prefix ign:  <https://github.com/anorthernman-developer/ignite-2026-announcements/ontology#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+
+<https://github.com/anorthernman-developer/ignite-2026-announcements/ontology>
+    a owl:Ontology ;
+    dct:title "Microsoft Ignite 2026 announcements ontology" ;
+    dct:created "2026-11-18"^^xsd:date ;
+    owl:versionInfo "1.0" .
+
+# Classes
+ign:Event          a owl:Class ; rdfs:label "Event" ; rdfs:comment "A Microsoft event, for example Microsoft Ignite 2026." ; rdfs:subClassOf schema:Event .
+ign:Announcement   a owl:Class ; rdfs:label "Announcement" ; rdfs:comment "One piece of product or service news, one row in the spreadsheet." .
+ign:ProductFamily  a owl:Class ; rdfs:label "Product family" ; rdfs:comment "Top level of the product hierarchy." .
+ign:Product        a owl:Class ; rdfs:label "Product" ; rdfs:subClassOf schema:Product .
+ign:Capability     a owl:Class ; rdfs:label "Capability area" ; rdfs:comment "Third level of the product hierarchy." .
+ign:AnnouncementType a owl:Class ; rdfs:label "Announcement type" .
+ign:Status         a owl:Class ; rdfs:label "Release status" ; rdfs:comment "Normalised release stage (GA, public preview, Frontier and so on)." .
+ign:Audience       a owl:Class ; rdfs:label "Audience" .
+ign:Industry       a owl:Class ; rdfs:label "Industry" .
+ign:Region         a owl:Class ; rdfs:label "Region" .
+ign:LicensingTerm  a owl:Class ; rdfs:label "Licensing term" ; rdfs:comment "A licence, SKU, credit or price condition." .
+ign:Source         a owl:Class ; rdfs:label "Source" ; rdfs:comment "A web page that evidences an announcement." ; rdfs:subClassOf schema:WebPage .
+ign:Partner        a owl:Class ; rdfs:label "Partner" ; rdfs:subClassOf schema:Organization .
+ign:Model          a owl:Class ; rdfs:label "AI model" ; rdfs:subClassOf ign:Product .
+ign:UpdateRun      a owl:Class ; rdfs:label "Update run" ; rdfs:comment "One scheduled build of this repository; links to change log entries." .
+
+# Object properties
+ign:announcedAt      a owl:ObjectProperty ; rdfs:domain ign:Announcement ; rdfs:range ign:Event .
+ign:concernsProduct  a owl:ObjectProperty ; rdfs:domain ign:Announcement ; rdfs:range ign:Product .
+ign:inFamily         a owl:ObjectProperty ; rdfs:domain ign:Product ; rdfs:range ign:ProductFamily .
+ign:hasCapability    a owl:ObjectProperty ; rdfs:domain ign:Announcement ; rdfs:range ign:Capability .
+ign:capabilityOf     a owl:ObjectProperty ; rdfs:domain ign:Capability ; rdfs:range ign:Product .
+ign:hasType          a owl:ObjectProperty ; rdfs:domain ign:Announcement ; rdfs:range ign:AnnouncementType .
+ign:hasStatus        a owl:ObjectProperty ; rdfs:domain ign:Announcement ; rdfs:range ign:Status .
+ign:targetsAudience  a owl:ObjectProperty ; rdfs:domain ign:Announcement ; rdfs:range ign:Audience .
+ign:targetsIndustry  a owl:ObjectProperty ; rdfs:domain ign:Announcement ; rdfs:range ign:Industry .
+ign:availableIn      a owl:ObjectProperty ; rdfs:domain ign:Announcement ; rdfs:range ign:Region .
+ign:requiresLicence  a owl:ObjectProperty ; rdfs:domain ign:Announcement ; rdfs:range ign:LicensingTerm .
+ign:evidencedBy      a owl:ObjectProperty ; rdfs:domain ign:Announcement ; rdfs:range ign:Source .
+ign:primarySource    a owl:ObjectProperty ; rdfs:subPropertyOf ign:evidencedBy .
+ign:secondarySource  a owl:ObjectProperty ; rdfs:subPropertyOf ign:evidencedBy .
+ign:involvesPartner  a owl:ObjectProperty ; rdfs:domain ign:Announcement ; rdfs:range ign:Partner .
+ign:relatedTo        a owl:ObjectProperty , owl:SymmetricProperty ; rdfs:domain ign:Announcement ; rdfs:range ign:Announcement .
+ign:supersedes       a owl:ObjectProperty ; rdfs:domain ign:Announcement ; rdfs:range ign:Announcement ; rdfs:comment "A later status change replaces an earlier announcement (for example preview to GA)." .
+ign:poweredBy        a owl:ObjectProperty ; rdfs:domain ign:Product ; rdfs:range ign:Model ; rdfs:comment "For example Cowork Auto is powered by Microsoft-Decision-1.1." .
+ign:changedIn        a owl:ObjectProperty ; rdfs:domain ign:Announcement ; rdfs:range ign:UpdateRun .
+
+# Datatype properties
+ign:id            a owl:DatatypeProperty ; rdfs:range xsd:string .
+ign:title         a owl:DatatypeProperty ; rdfs:range xsd:string .
+ign:summary       a owl:DatatypeProperty ; rdfs:range xsd:string .
+ign:announcedDate a owl:DatatypeProperty ; rdfs:range xsd:date .
+ign:availability  a owl:DatatypeProperty ; rdfs:range xsd:string ; rdfs:comment "Microsoft's stated availability, kept as text because it is often a month or 'coming soon'." .
+ign:statusText    a owl:DatatypeProperty ; rdfs:range xsd:string .
+ign:igniteScope   a owl:DatatypeProperty ; rdfs:range xsd:string .
+ign:verification  a owl:DatatypeProperty ; rdfs:range xsd:string .
+ign:tag           a owl:DatatypeProperty ; rdfs:range xsd:string .
+ign:firstSeen     a owl:DatatypeProperty ; rdfs:range xsd:date .
+ign:lastUpdated   a owl:DatatypeProperty ; rdfs:range xsd:date .
+
+# Status individuals
+ign:GA a ign:Status ; rdfs:label "GA" .
+ign:PublicPreview a ign:Status ; rdfs:label "Public preview" .
+ign:PrivatePreview a ign:Status ; rdfs:label "Private or limited preview" .
+ign:Preview a ign:Status ; rdfs:label "Preview (stage not stated)" .
+ign:Frontier a ign:Status ; rdfs:label "Frontier" .
+ign:ComingSoon a ign:Status ; rdfs:label "Coming soon" .
+ign:Mixed a ign:Status ; rdfs:label "Mixed" .
+ign:Retirement a ign:Status ; rdfs:label "Retirement" .
+ign:LicensingChange a ign:Status ; rdfs:label "Licensing change" .
+ign:Announced a ign:Status ; rdfs:label "Announced" .
+ign:Ignite2026 a ign:Event ; rdfs:label "Microsoft Ignite 2026" ; schema:startDate "2026-11-17"^^xsd:date ; schema:endDate "2026-11-20"^^xsd:date ; schema:location "San Francisco and online" .

@@ -1,0 +1,32 @@
+{
+  "@context": {
+    "ign": "https://github.com/anorthernman-developer/ignite-2026-announcements/ontology#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "id": "ign:id",
+    "title": "ign:title",
+    "summary": "ign:summary",
+    "announced_date": {"@id": "ign:announcedDate", "@type": "xsd:date"},
+    "event": {"@id": "ign:announcedAt"},
+    "ignite_scope": "ign:igniteScope",
+    "product_family": {"@id": "ign:inFamily"},
+    "product": {"@id": "ign:concernsProduct"},
+    "capability_area": {"@id": "ign:hasCapability"},
+    "announcement_type": {"@id": "ign:hasType"},
+    "status": "ign:statusText",
+    "status_category": {"@id": "ign:hasStatus"},
+    "availability": "ign:availability",
+    "audience": {"@id": "ign:targetsAudience"},
+    "industry": {"@id": "ign:targetsIndustry"},
+    "licensing": {"@id": "ign:requiresLicence"},
+    "region": {"@id": "ign:availableIn"},
+    "tags": "ign:tag",
+    "source_url": {"@id": "ign:primarySource", "@type": "@id"},
+    "secondary_source": {"@id": "ign:secondarySource", "@type": "@id"},
+    "verification": "ign:verification",
+    "related": {"@id": "ign:relatedTo"},
+    "first_seen": {"@id": "ign:firstSeen", "@type": "xsd:date"},
+    "last_updated": {"@id": "ign:lastUpdated", "@type": "xsd:date"}
+  },
+  "@comment": "Apply this context to each object in data/announcements.json to read the data as linked data. Classes and properties are defined in ontology.ttl."
+}
