@@ -21,7 +21,7 @@ Microsoft 365 Copilot, the Copilot app, Office in Copilot, Cowork, Code, Autopil
 - Copilot plugins: Extensibility
 - Microsoft Copilot app: Collaboration, Copilot experience, Office apps, Proactive assistance
 - Microsoft Teams: Agent experiences, Agent identity, Meeting security
-- SharePoint: Content governance, Work IQ
+- SharePoint: Content governance
 - Viva Engage: Communities, Community Agent, Copilot and Cowork, Employee communications
 
 ### Agents and agent governance
@@ -49,20 +49,17 @@ Models (MAI, OpenAI, Meta, Microsoft-Decision), Microsoft Foundry platform servi
 - Dragon Copilot: Clinical documentation
 - MAI models: Coding models, Image models, Model access, Productivity models, Security models, Speech models
 - Maia: AI silicon
-- Microsoft Foundry: Agent harness, Agent tools, Continuous improvement, Hosted agents, Model catalogue, Model routing
+- Microsoft Foundry: Agent harness, Continuous improvement, Model catalogue, Model routing
 - Microsoft-Decision-1.1: Decision models
 
 ### Azure infrastructure and operations
 
 Azure compute, operations, migration, AI infrastructure, Azure Local, sovereign cloud and Windows Server.
 
-- Azure AI Gateway: AI gateway
 - Azure AI infrastructure: AI infrastructure
-- Azure API Management: Agent governance, Regions
 - Azure Catalyst: Migration and modernisation
 - Azure Chaos Studio: Resilience
 - Azure Copilot: Agentic operations
-- Azure Functions: Agentic functions, Connectors, Durable execution, Language runtimes
 - Azure Local: Confidential computing, Sovereign and hybrid
 - Azure Monitor: Observability
 - Azure Resource Manager: Agentic operations
@@ -105,14 +102,14 @@ Microsoft Perception, Defender, Sentinel, Entra, Purview, Baseline Security Mode
 - Microsoft Entra: Access control, Agent identity, Authentication, Platform
 - Microsoft Perception: Agentic security
 - Microsoft Purview: Classification, Data security for AI, Network DLP
-- Microsoft Sentinel: SIEM connectors, SIEM operations
+- Microsoft Sentinel: SIEM connectors
 - Responsible AI: AI governance
 
 ### Windows, Windows 365 and endpoint management
 
 Windows 11, Windows 365, Intune and endpoint management.
 
-- Microsoft Intune: Endpoint management, Vulnerability management
+- Microsoft Intune: Endpoint management
 - Windows 11: Agent containment, Copilot on Windows, Platform security
 - Windows 365: Cloud PC
 
@@ -120,7 +117,7 @@ Windows 11, Windows 365, Intune and endpoint management.
 
 Edge for Business security and governed AI browsing.
 
-- Edge for Business: Browser security, Built-in AI, Governed AI
+- Edge for Business: Browser security, Governed AI
 
 ### Business applications
 
