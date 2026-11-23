@@ -1,0 +1,599 @@
+{
+ "id": "resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e",
+ "created_at": 1795425720,
+ "error": null,
+ "incomplete_details": null,
+ "instructions": null,
+ "metadata": null,
+ "model": "parallel",
+ "object": "response",
+ "output": [
+  {
+   "id": "ws_resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e_0",
+   "action": {
+    "type": "search",
+    "queries": [
+     "Microsoft Ignite 2026 Book of News announcements"
+    ],
+    "query": "Microsoft Ignite 2026 Book of News announcements",
+    "sources": null
+   },
+   "status": "completed",
+   "type": "web_search_call"
+  },
+  {
+   "id": "ws_resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e_1",
+   "action": {
+    "type": "open_page",
+    "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/"
+   },
+   "status": "completed",
+   "type": "web_search_call"
+  },
+  {
+   "id": "ws_resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e_2",
+   "action": {
+    "type": "open_page",
+    "url": "https://news.microsoft.com/events/ignite/2026/live-news/"
+   },
+   "status": "completed",
+   "type": "web_search_call"
+  },
+  {
+   "id": "ws_resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e_3",
+   "action": {
+    "type": "search",
+    "queries": [
+     "site:news.microsoft.com/events/ignite/2026/book-of-news Ignite 2026 Power Platform Purview Intune Teams"
+    ],
+    "query": "site:news.microsoft.com/events/ignite/2026/book-of-news Ignite 2026 Power Platform Purview Intune Teams",
+    "sources": null
+   },
+   "status": "completed",
+   "type": "web_search_call"
+  },
+  {
+   "id": "ws_resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e_4",
+   "action": {
+    "type": "open_page",
+    "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/"
+   },
+   "status": "completed",
+   "type": "web_search_call"
+  },
+  {
+   "id": "ws_resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e_5",
+   "action": {
+    "type": "search",
+    "queries": [
+     "Microsoft Ignite 2026 official blog Teams SharePoint Purview Intune Edge Security Copilot"
+    ],
+    "query": "Microsoft Ignite 2026 official blog Teams SharePoint Purview Intune Edge Security Copilot",
+    "sources": null
+   },
+   "status": "completed",
+   "type": "web_search_call"
+  },
+  {
+   "id": "ws_resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e_6",
+   "action": {
+    "type": "search",
+    "queries": [
+     "Microsoft Ignite 2026 Book of News 59 announcements Power Platform licensing"
+    ],
+    "query": "Microsoft Ignite 2026 Book of News 59 announcements Power Platform licensing",
+    "sources": null
+   },
+   "status": "completed",
+   "type": "web_search_call"
+  },
+  {
+   "id": "ws_resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e_7",
+   "action": {
+    "type": "search",
+    "queries": [
+     "Microsoft Power Platform blog Ignite 2026 Power Apps Power Automate announcement"
+    ],
+    "query": "Microsoft Power Platform blog Ignite 2026 Power Apps Power Automate announcement",
+    "sources": null
+   },
+   "status": "completed",
+   "type": "web_search_call"
+  },
+  {
+   "id": "ws_resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e_8",
+   "action": {
+    "type": "search",
+    "queries": [
+     "Microsoft Teams SharePoint Ignite 2026 announcement official blog"
+    ],
+    "query": "Microsoft Teams SharePoint Ignite 2026 announcement official blog",
+    "sources": null
+   },
+   "status": "completed",
+   "type": "web_search_call"
+  },
+  {
+   "id": "ws_resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e_9",
+   "action": {
+    "type": "search",
+    "queries": [
+     "Microsoft Security Ignite 2026 Purview Intune Edge Copilot official announcement"
+    ],
+    "query": "Microsoft Security Ignite 2026 Purview Intune Edge Copilot official announcement",
+    "sources": null
+   },
+   "status": "completed",
+   "type": "web_search_call"
+  },
+  {
+   "id": "ws_resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e_10",
+   "action": {
+    "type": "search",
+    "queries": [
+     "Microsoft Ignite 2026 industry solutions healthcare manufacturing retail official announcement"
+    ],
+    "query": "Microsoft Ignite 2026 industry solutions healthcare manufacturing retail official announcement",
+    "sources": null
+   },
+   "status": "completed",
+   "type": "web_search_call"
+  },
+  {
+   "id": "ws_resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e_11",
+   "action": {
+    "type": "open_page",
+    "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/"
+   },
+   "status": "completed",
+   "type": "web_search_call"
+  },
+  {
+   "id": "ws_resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e_12",
+   "action": {
+    "type": "search",
+    "queries": [
+     "site:techcommunity.microsoft.com Microsoft Purview Ignite 2026 sensitive files DLP agents"
+    ],
+    "query": "site:techcommunity.microsoft.com Microsoft Purview Ignite 2026 sensitive files DLP agents",
+    "sources": null
+   },
+   "status": "completed",
+   "type": "web_search_call"
+  },
+  {
+   "id": "ws_resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e_13",
+   "action": {
+    "type": "search",
+    "queries": [
+     "site:techcommunity.microsoft.com Ignite 2026 Intune Edge for Business agent governance"
+    ],
+    "query": "site:techcommunity.microsoft.com Ignite 2026 Intune Edge for Business agent governance",
+    "sources": null
+   },
+   "status": "completed",
+   "type": "web_search_call"
+  },
+  {
+   "id": "ws_resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e_14",
+   "action": {
+    "type": "search",
+    "queries": [
+     "Microsoft SharePoint Teams Ignite 2026 official Work IQ announcements"
+    ],
+    "query": "Microsoft SharePoint Teams Ignite 2026 official Work IQ announcements",
+    "sources": null
+   },
+   "status": "completed",
+   "type": "web_search_call"
+  },
+  {
+   "id": "ws_resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e_15",
+   "action": {
+    "type": "search",
+    "queries": [
+     "Microsoft Dynamics 365 Ignite 2026 industry solutions official blog November 17"
+    ],
+    "query": "Microsoft Dynamics 365 Ignite 2026 industry solutions official blog November 17",
+    "sources": null
+   },
+   "status": "completed",
+   "type": "web_search_call"
+  },
+  {
+   "id": "ws_resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e_16",
+   "action": {
+    "type": "open_page",
+    "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/11/18/turn-ai-ambition-into-real-business-value-with-power-platform/"
+   },
+   "status": "completed",
+   "type": "web_search_call"
+  },
+  {
+   "id": "ws_resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e_17",
+   "action": {
+    "type": "open_page",
+    "url": "https://techcommunity.microsoft.com/blog/spblog/sharepoint-and-onedrive-at-microsoft-ignite-2026-putting-ai-powered-content-to-w/4535416"
+   },
+   "status": "completed",
+   "type": "web_search_call"
+  },
+  {
+   "id": "ws_resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e_18",
+   "action": {
+    "type": "open_page",
+    "url": "https://techcommunity.microsoft.com/blog/microsoftintuneblog/what%E2%80%99s-new-in-microsoft-intune-at-ignite/4570003"
+   },
+   "status": "completed",
+   "type": "web_search_call"
+  },
+  {
+   "id": "ws_resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e_19",
+   "action": {
+    "type": "open_page",
+    "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/"
+   },
+   "status": "completed",
+   "type": "web_search_call"
+  },
+  {
+   "id": "ws_resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e_20",
+   "action": {
+    "type": "search",
+    "queries": [
+     "Microsoft Edge for Business Ignite 2026 skills recorder managed agent browsing official blog"
+    ],
+    "query": "Microsoft Edge for Business Ignite 2026 skills recorder managed agent browsing official blog",
+    "sources": null
+   },
+   "status": "completed",
+   "type": "web_search_call"
+  },
+  {
+   "id": "ws_resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e_21",
+   "action": {
+    "type": "search",
+    "queries": [
+     "Microsoft Ignite 2026 Power Platform announcements business skills Work IQ official"
+    ],
+    "query": "Microsoft Ignite 2026 Power Platform announcements business skills Work IQ official",
+    "sources": null
+   },
+   "status": "completed",
+   "type": "web_search_call"
+  },
+  {
+   "id": "ws_resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e_22",
+   "action": {
+    "type": "search",
+    "queries": [
+     "Microsoft official Ignite 2026 healthcare industry solution announced product"
+    ],
+    "query": "Microsoft official Ignite 2026 healthcare industry solution announced product",
+    "sources": null
+   },
+   "status": "completed",
+   "type": "web_search_call"
+  },
+  {
+   "id": "ws_resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e_23",
+   "action": {
+    "type": "open_page",
+    "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/11/18/turn-ai-ambition-into-real-business-value-with-power-platform/"
+   },
+   "status": "completed",
+   "type": "web_search_call"
+  },
+  {
+   "id": "ws_resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e_24",
+   "action": {
+    "type": "open_page",
+    "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/"
+   },
+   "status": "completed",
+   "type": "web_search_call"
+  },
+  {
+   "id": "ws_resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e_25",
+   "action": {
+    "type": "open_page",
+    "url": "https://news.microsoft.com/events/ignite/2026/live-news/"
+   },
+   "status": "completed",
+   "type": "web_search_call"
+  },
+  {
+   "id": "msg_resp_5d4748fd-4b8c-4b30-94d3-e713e8fb311e",
+   "content": [
+    {
+     "annotations": [
+      {
+       "end_index": 739,
+       "start_index": 531,
+       "title": "Microsoft Ignite 2026 | Book of News",
+       "type": "url_citation",
+       "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/?check=20261119"
+      },
+      {
+       "end_index": 739,
+       "start_index": 531,
+       "title": "Microsoft Ignite 2026 | Live News",
+       "type": "url_citation",
+       "url": "https://news.microsoft.com/events/ignite/2026/live-news/?refresh=1"
+      },
+      {
+       "end_index": 739,
+       "start_index": 531,
+       "title": "Microsoft Ignite 2026: Announcements and Book of News Recap",
+       "type": "url_citation",
+       "url": "https://www.copilot-coaching.de/en/blog/ignite-2026-key-announcements"
+      },
+      {
+       "end_index": 1577,
+       "start_index": 1499,
+       "title": "Microsoft Ignite 2026 | Book of News",
+       "type": "url_citation",
+       "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/"
+      },
+      {
+       "end_index": 17568,
+       "start_index": 17423,
+       "title": "Microsoft Ignite 2026 | Book of News",
+       "type": "url_citation",
+       "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/"
+      },
+      {
+       "end_index": 20805,
+       "start_index": 20684,
+       "title": "Microsoft Ignite 2026 | Book of News",
+       "type": "url_citation",
+       "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/"
+      },
+      {
+       "end_index": 21039,
+       "start_index": 20806,
+       "title": "Microsoft Ignite 2026 | Book of News",
+       "type": "url_citation",
+       "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/"
+      },
+      {
+       "end_index": 21274,
+       "start_index": 21040,
+       "title": "Microsoft Ignite 2026 | Book of News",
+       "type": "url_citation",
+       "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/"
+      },
+      {
+       "end_index": 21533,
+       "start_index": 21438,
+       "title": "Microsoft Ignite 2026 | Book of News",
+       "type": "url_citation",
+       "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/"
+      },
+      {
+       "end_index": 22149,
+       "start_index": 22070,
+       "title": "Microsoft Ignite 2026 | Book of News",
+       "type": "url_citation",
+       "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/"
+      },
+      {
+       "end_index": 22762,
+       "start_index": 22576,
+       "title": "Microsoft Ignite 2026 | Book of News",
+       "type": "url_citation",
+       "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/"
+      },
+      {
+       "end_index": 2079,
+       "start_index": 1908,
+       "title": "Copilot at Microsoft Ignite: Expanding what\u2019s possible with intelligence built for work | Microsoft Copilot Blog",
+       "type": "url_citation",
+       "url": "https://www.microsoft.com/en-us/copilot/blog/2026/11/17/copilot-at-microsoft-ignite-expanding-whats-possible-with-intelligence-built-for-work/?icid=mscom_marcom_BRCP1a_CopilotatIgnite"
+      },
+      {
+       "end_index": 1577,
+       "start_index": 1499,
+       "title": "Microsoft Ignite 2026 | Live News",
+       "type": "url_citation",
+       "url": "https://news.microsoft.com/events/ignite/2026/live-news/"
+      },
+      {
+       "end_index": 21533,
+       "start_index": 21438,
+       "title": "Microsoft Ignite 2026 | Live News",
+       "type": "url_citation",
+       "url": "https://news.microsoft.com/events/ignite/2026/live-news/"
+      },
+      {
+       "end_index": 21866,
+       "start_index": 21791,
+       "title": "Microsoft Ignite 2026 | Live News",
+       "type": "url_citation",
+       "url": "https://news.microsoft.com/events/ignite/2026/live-news/"
+      },
+      {
+       "end_index": 22762,
+       "start_index": 22576,
+       "title": "Microsoft Ignite 2026 | Live News",
+       "type": "url_citation",
+       "url": "https://news.microsoft.com/events/ignite/2026/live-news/"
+      },
+      {
+       "end_index": 5212,
+       "start_index": 5053,
+       "title": "Microsoft Ignite 2026: Introducing Dynamics 365 in Copilot - Microsoft Dynamics 365 Blog",
+       "type": "url_citation",
+       "url": "https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/11/17/microsoft-ignite-2026-introducing-dynamics-365-in-copilot/"
+      },
+      {
+       "end_index": 7628,
+       "start_index": 7328,
+       "title": "Business Applications in Work IQ is now generally available",
+       "type": "url_citation",
+       "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/11/18/business-applications-work-iq-generally-available/"
+      },
+      {
+       "end_index": 22762,
+       "start_index": 22576,
+       "title": "Business Applications in Work IQ is now generally available",
+       "type": "url_citation",
+       "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/11/18/business-applications-work-iq-generally-available/"
+      },
+      {
+       "end_index": 7628,
+       "start_index": 7328,
+       "title": "What's new in Work IQ at Ignite 2026: agents that get work done | Microsoft Community Hub",
+       "type": "url_citation",
+       "url": "https://techcommunity.microsoft.com/blog/microsoft_365blog/whats-new-in-work-iq-at-ignite-2026-agents-that-get-work-done/4572219"
+      },
+      {
+       "end_index": 22762,
+       "start_index": 22576,
+       "title": "What's new in Work IQ at Ignite 2026: agents that get work done | Microsoft Community Hub",
+       "type": "url_citation",
+       "url": "https://techcommunity.microsoft.com/blog/microsoft_365blog/whats-new-in-work-iq-at-ignite-2026-agents-that-get-work-done/4572219"
+      },
+      {
+       "end_index": 7628,
+       "start_index": 7328,
+       "title": "Use Business Applications in Work IQ - Power Apps | Microsoft Learn",
+       "type": "url_citation",
+       "url": "https://learn.microsoft.com/en-us/power-apps/user/use-business-apps-work-iq"
+      },
+      {
+       "end_index": 8327,
+       "start_index": 8176,
+       "title": "Turn AI ambition into real business value with Power Platform\u00a0 - Microsoft Power Platform Blog",
+       "type": "url_citation",
+       "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/11/18/turn-ai-ambition-into-real-business-value-with-power-platform/"
+      },
+      {
+       "end_index": 21274,
+       "start_index": 21040,
+       "title": "Turn AI ambition into real business value with Power Platform\u00a0 - Microsoft Power Platform Blog",
+       "type": "url_citation",
+       "url": "https://www.microsoft.com/en-us/power-platform/blog/2026/11/18/turn-ai-ambition-into-real-business-value-with-power-platform/"
+      },
+      {
+       "end_index": 9283,
+       "start_index": 9125,
+       "title": "SharePoint and OneDrive at Microsoft Ignite 2026: Putting AI-powered content to work | Microsoft Community Hub",
+       "type": "url_citation",
+       "url": "https://techcommunity.microsoft.com/blog/spblog/sharepoint-and-onedrive-at-microsoft-ignite-2026-putting-ai-powered-content-to-w/4535416"
+      },
+      {
+       "end_index": 11476,
+       "start_index": 11321,
+       "title": "Secure the data that fuels AI with Microsoft Purview | Microsoft Community Hub",
+       "type": "url_citation",
+       "url": "https://techcommunity.microsoft.com/blog/microsoft-security-blog/secure-the-data-that-fuels-ai-with-microsoft-purview/4573266"
+      },
+      {
+       "end_index": 12438,
+       "start_index": 12303,
+       "title": "What\u2019s New in Microsoft Intune at Ignite",
+       "type": "url_citation",
+       "url": "https://techcommunity.microsoft.com/blog/microsoftintuneblog/what%E2%80%99s-new-in-microsoft-intune-at-ignite/4570003"
+      },
+      {
+       "end_index": 12438,
+       "start_index": 12303,
+       "title": "A guide to governing local AI agents with Intune | Microsoft Community Hub",
+       "type": "url_citation",
+       "url": "https://techcommunity.microsoft.com/blog/intunecustomersuccess/a-guide-to-governing-local-ai-agents-with-intune/4573284"
+      },
+      {
+       "end_index": 13724,
+       "start_index": 13609,
+       "title": "https://blogs.windows.com/msedgedev/feed/",
+       "type": "url_citation",
+       "url": "https://blogs.windows.com/msedgedev/feed/"
+      },
+      {
+       "end_index": 17568,
+       "start_index": 17423,
+       "title": "Microsoft Ignite 2026: Empowering human ambition, intelligence and trust - Source",
+       "type": "url_citation",
+       "url": "https://news.microsoft.com/source/2026/11/17/microsoft-ignite-2026-empowering-human-ambition,-intelligence-and-trust"
+      },
+      {
+       "end_index": 21866,
+       "start_index": 21791,
+       "title": "Microsoft Ignite 2026: Empowering human ambition, intelligence and trust - Source",
+       "type": "url_citation",
+       "url": "https://news.microsoft.com/source/2026/11/17/microsoft-ignite-2026-empowering-human-ambition,-intelligence-and-trust"
+      },
+      {
+       "end_index": 18139,
+       "start_index": 17990,
+       "title": "Microsoft Ignite 2026: Building Windows for the next era of work | Windows Experience Blog",
+       "type": "url_citation",
+       "url": "https://blogs.windows.com/windowsexperience/2026/11/17/microsoft-ignite-2026-building-windows-for-the-next-era-of-work/"
+      },
+      {
+       "end_index": 19147,
+       "start_index": 18983,
+       "title": "Microsoft Entra news announcements from Microsoft Ignite November 2026",
+       "type": "url_citation",
+       "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/ai-is-changing-access-see-how-microsoft-entra-helps-you-stay-ahead-/4556456"
+      },
+      {
+       "end_index": 20614,
+       "start_index": 20496,
+       "title": "Ignite 2026: Building the frontier ecosystem - The Official Microsoft Blog",
+       "type": "url_citation",
+       "url": "https://blogs.microsoft.com/blog/2026/11/17/ignite-2026-building-the-frontier-ecosystem/"
+      },
+      {
+       "end_index": 20614,
+       "start_index": 20496,
+       "title": "Microsoft Ignite 2026 Announcements: Full Recap",
+       "type": "url_citation",
+       "url": "https://www.witivio.com/en/blog/microsoft-ignite-2026-announcements"
+      },
+      {
+       "end_index": 22149,
+       "start_index": 22070,
+       "title": "Security Copilot in Intune features overview - Microsoft Intune | Microsoft Learn",
+       "type": "url_citation",
+       "url": "https://learn.microsoft.com/en-us/intune/copilot/"
+      }
+     ],
+     "text": "## Microsoft Ignite 2026 announcements \u2014 verified catalogue (as of 23 November 2026)\n\n**Scope and completeness.** Microsoft describes the Book of News as a guide to key announcements; the live news blog records keynote announcements. Together, the sources support the catalogue below, but they do not provide every requested field for every capability. Some entries bundle many features, and several official posts give no regional rollout, licensing, or exact date. I have marked those fields \u201cnot stated\u201d rather than infer them. Accordingly, this is a de-duplicated catalogue of the announcements I could verify in the official material\u2014not a claim that every one of the Book\u2019s reported 59 entries and every sub-feature is itemized here.\n\n**How to read the entries:** each row gives family/product; capability and short description; status; availability/date and regions; audience; licensing prerequisites; and the official Microsoft source. \u201cNot stated\u201d means the cited official material does not specify it. Preview, Frontier, pilot, and GA are kept distinct.\n\n| Product family / product | Capability and short description | Status | Availability date / regions | Audience | Licensing prerequisites | Official source |\n|---|---|---|---|---|---|---|\n| **Copilot \u2014 Home** | New Copilot starting point bringing Chat and Cowork together. | GA; rolling out worldwide. | Worldwide rollout announced at Ignite; no completion date stated. | Copilot users. | Not stated in the cited Ignite announcement. | [Book of News](https://news.microsoft.com/events/ignite/2026/book-of-news/). |\n| **Copilot \u2014 Office in Copilot** | Word, Excel, and PowerPoint are available within the Copilot app for creating and collaborating on files. | GA. | Announced 17 November; regions not specified in the cited post. | People collaborating on documents, workbooks, and presentations. | Not stated in the cited Ignite announcement. | [Microsoft Copilot blog](https://www.microsoft.com/en-us/copilot/blog/2026/11/17/copilot-at-microsoft-ignite-expanding-whats-possible-with-intelligence-built-for-work/). |\n| **Copilot \u2014 Autopilot** | Persistent, proactive agent intended to carry work forward; each Autopilot has its own Entra Agent ID and named manager. | Rolling out to Frontier customers. | Rollout began 17 November; regions not stated. | Frontier customers and organizations managing agent access. | Not stated in the cited announcement. | [Microsoft Copilot blog](https://www.microsoft.com/en-us/copilot/blog/2026/11/17/copilot-at-microsoft-ignite-expanding-whats-possible-with-intelligence-built-for-work/). |\n| **Copilot \u2014 Workspaces** | Shared space in the Copilot app for teams, their work, and Copilot; described as an evolution of Copilot Notebooks. | Frontier. | Available in Frontier at Ignite; broader date and regions not stated. | Teams working on shared workstreams. | Frontier access; other licensing not stated. | [Microsoft Copilot blog](https://www.microsoft.com/en-us/copilot/blog/2026/11/17/copilot-at-microsoft-ignite-expanding-whats-possible-with-intelligence-built-for-work/). |\n| **Copilot \u2014 Code** | Create apps and other tools from natural-language instructions; supported apps can be published through Copilot Managed Runtime. | Frontier; GA planned for December 2026. | Available through Frontier on Windows, web, iOS, and Android; local sandbox on Windows, with macOS coming soon. | Business users and app builders. | Not stated in the cited Ignite announcement. | [Book of News](https://news.microsoft.com/events/ignite/2026/book-of-news/). |\n| **Copilot \u2014 Today / Today Brief** | Personalized morning briefing of priorities and prepared next steps; live coverage separately described Today as surfacing priorities and next steps. | Today was rolling out to private preview; Brief described as included with a Microsoft 365 Copilot license. | Private-preview rollout announced at Ignite; regions not stated. | People prioritizing work. | Microsoft 365 Copilot license for Today Brief; the cited live post does not state a separate prerequisite for the private preview. | [Book of News](https://news.microsoft.com/events/ignite/2026/book-of-news/). |\n| **Copilot Managed Runtime** | Microsoft-managed hosting and execution for supported apps; optional Fabric services can provide an app data backend. | Runtime GA; Agents and Workflows were announced, but their release status is not separately specified in the cited Book excerpt. | Runtime GA at Ignite; regions not specified. | App builders and administrators. | Not stated in the cited Ignite announcement. | [Book of News](https://news.microsoft.com/events/ignite/2026/book-of-news/). |\n| **Microsoft Dynamics 365 in Copilot** | Sales plugin brings account planning, meeting preparation, deal catch-up, and pipeline prioritization into Copilot; ERP plugin brings finance-and-operations context and actions into Copilot Cowork and Excel. | Sales and ERP plugins GA. | Announced 17 November; regions not stated. | Sales, finance, and operations teams. | Not stated in the cited Ignite post. | [Dynamics 365 blog](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/11/17/microsoft-ignite-2026-introducing-dynamics-365-in-copilot/). |\n| **Microsoft Contact Center Intelligence** | Purpose-built voice- and digital-channel agents layered over customers\u2019 contact-center platforms. | GA. | Announced 17 November; regional availability not stated. | Contact-center customers and operators. | Not stated in the cited post. | [Dynamics 365 blog](https://www.microsoft.com/en-us/dynamics-365/blog/business-leader/2026/11/17/microsoft-ignite-2026-introducing-dynamics-365-in-copilot/). |\n| **Microsoft and Salesforce \u2014 Salesforce in Copilot** | Salesforce customer context and supported actions in Copilot, with more than 38 prebuilt sales skills and access governed by existing Salesforce permissions. | Preview. | Preview announced at Ignite; regions not stated. | Sellers using Salesforce and Microsoft Copilot. | Authenticated Salesforce MCP access is described; a product license prerequisite is not stated in the cited announcement. | [Book of News](https://news.microsoft.com/events/ignite/2026/book-of-news/). |\n| **Microsoft and Salesforce \u2014 Sales Cloud in Teams** | Brings Salesforce customer context into team collaboration, including pipeline and quota progress, deal notifications, and briefing materials. | Pilot. | Pilot announced at Ignite; regions and date beyond the pilot not stated. | Sales teams collaborating in Teams. | Not stated in the cited Book entry. | [Book of News](https://news.microsoft.com/events/ignite/2026/book-of-news/). |\n| **Microsoft Power Platform \u2014 Business Applications in Work IQ** | Makes business data and context from Dynamics 365 and Power Platform available to Copilot and agents; Work IQ can generate a Dataverse semantic model and use business skills. | GA announcement for Business Applications in Work IQ; Microsoft\u2019s Work IQ blog separately labels ERP as preview, so ERP-specific scope is not fully consistent across the official posts. | GA announced 18 November; regions not stated. | Power Platform and Dynamics 365 users, administrators, makers, and developers. | A Power Platform administrator must enable Work IQ for the environment; access remains subject to existing permissions. | [Dynamics 365 blog](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/11/18/business-applications-work-iq-generally-available/) and [Microsoft 365 Work IQ blog](https://techcommunity.microsoft.com/blog/microsoft_365blog/whats-new-in-work-iq-at-ignite-2026-agents-that-get-work-done/4572219). |\n| **Power Apps / Power Automate** | The Ignite Power Platform post highlights platform quality work, flow views, and Copilot in canvas apps. The post says Copilot in canvas apps reaches GA in November; it does not give a specific rollout date or regions for these items. | Copilot in canvas apps: GA in November; flow-view and quality announcements have no individual status stated in the cited post. | November for canvas-app Copilot; exact date and regions not stated. | Power Platform users and makers. | Not stated in the cited Ignite post. | [Power Platform blog](https://www.microsoft.com/en-us/power-platform/blog/2026/11/18/turn-ai-ambition-into-real-business-value-with-power-platform/). |\n| **Power BI \u2014 custom data apps** | Lets Power BI users create purpose-built data apps in Power BI Desktop, using trusted models and natural language; described as supporting analytical and transactional scenarios. | Preview. | Preview announced at Ignite; regions not stated. | Power BI Pro customers. | Power BI Pro is specified. | [Book of News](https://news.microsoft.com/events/ignite/2026/book-of-news/). |\n| **SharePoint \u2014 tools in Work IQ** | Gives Copilot and agents access to more than 60 SharePoint operations across lists, libraries, files, search, approvals, rules, and versioning. | Public preview. | Microsoft\u2019s SharePoint post says the tools are now in public preview; regions not stated. | SharePoint users and builders of Copilot/custom agents. | Not stated in the cited post. | [SharePoint blog](https://techcommunity.microsoft.com/blog/spblog/sharepoint-and-onedrive-at-microsoft-ignite-2026-putting-ai-powered-content-to-w/4535416). |\n| **SharePoint \u2014 Work IQ context enhancements** | Adds agent-friendly document grounding, including Markdown, images and thumbnails, summaries, and semantic lookup within files; further source coverage is described as future expansion. | Rolling out to public preview. | Public-preview rollout starting in November; regions not stated. | Custom-agent builders and users of SharePoint content. | Not stated in the cited post. | [SharePoint blog](https://techcommunity.microsoft.com/blog/spblog/sharepoint-and-onedrive-at-microsoft-ignite-2026-putting-ai-powered-content-to-w/4535416). |\n| **SharePoint \u2014 Knowledge Base** | Curates existing content and expertise so people and AI can discover and use it. | Frontier preview; the post says it rolled out in October, before Ignite. | Frontier preview from October; regions not stated. | SharePoint teams and agent users. | Frontier access; other prerequisites not stated. | [SharePoint blog](https://techcommunity.microsoft.com/blog/spblog/sharepoint-and-onedrive-at-microsoft-ignite-2026-putting-ai-powered-content-to-w/4535416). |\n| **SharePoint \u2014 Copilot in SharePoint** | Natural-language discovery and understanding of SharePoint content and the ability to work across content. | GA in October, before Ignite. | GA in October; regions not stated in the cited Ignite blog. | SharePoint users. | Not stated in the cited post. | [SharePoint blog](https://techcommunity.microsoft.com/blog/spblog/sharepoint-and-onedrive-at-microsoft-ignite-2026-putting-ai-powered-content-to-w/4535416). |\n| **Microsoft Purview \u2014 Copilot and local-agent DLP** | Policies can block Copilot from processing sensitive files even when unlabeled, and protect prompts containing attached or linked sensitive files; additional DLP covers sensitive information used by local agents. | Public preview planned. | Public preview in January 2027; regions not stated. | Data-security administrators and organizations using Copilot or supported local agents. | No license prerequisite stated in the cited announcement. | [Microsoft Security blog](https://techcommunity.microsoft.com/blog/microsoft-security-blog/secure-the-data-that-fuels-ai-with-microsoft-purview/4573266). |\n| **Microsoft Purview / Agent 365 \u2014 agent-risk signals** | Purview agent-activity and sensitive-data signals feed into Unified Agent Risk to help prioritize investigation and controls. | Public preview; the post does not give a date. | Date and regions not stated. | Security teams. | Not stated in the cited announcement. | [Microsoft Security blog](https://techcommunity.microsoft.com/blog/microsoft-security-blog/secure-the-data-that-fuels-ai-with-microsoft-purview/4573266). |\n| **Microsoft Intune \u2014 local-agent governance** | Agent discovery and device compliance controls for unapproved agents; policies and Windows execution containers constrain supported agents\u2019 file and network access. | Preview. | Preview announced at Ignite; regions not stated. | IT and endpoint administrators. | Not stated in the cited post. | [Intune blog](https://techcommunity.microsoft.com/blog/microsoftintuneblog/what%E2%80%99s-new-in-microsoft-intune-at-ignite/4570003). |\n| **Microsoft Intune \u2014 Vulnerability Remediation Agent** | Uses Defender vulnerability intelligence with Intune device/app context to build and execute remediation playbooks for prioritized risks. | Limited public preview. | Date and regions not stated. | Security and IT teams. | Not stated in the cited post. | [Intune blog](https://techcommunity.microsoft.com/blog/microsoftintuneblog/what%E2%80%99s-new-in-microsoft-intune-at-ignite/4570003). |\n| **Microsoft Intune \u2014 Windows Server management** | Brings eligible servers into Intune cloud-management workflows for configuration, app deployment, and compliance. | Insider preview. | Date and regions not stated. | IT teams managing supported Windows Server estates. | Not stated in the cited post. | [Intune blog](https://techcommunity.microsoft.com/blog/microsoftintuneblog/what%E2%80%99s-new-in-microsoft-intune-at-ignite/4570003). |\n| **Microsoft Edge for Business \u2014 Cowork agentic browsing** | Cowork can complete multi-step tasks across websites on a user\u2019s behalf. | GA. | Available in Cowork; regions not stated. | Enterprise browser users. | Microsoft 365 Copilot license with usage-based billing enabled. | [Microsoft Edge blog](https://blogs.windows.com/msedgedev/2026/11/17/edge-for-business-ignite-2026-innovations/). |\n| **Microsoft Edge for Business \u2014 Skills recorder** | Records an end-to-end workflow and turns it into a reusable, shareable Cowork skill. | Preview planned by year end. | Preview by end of 2026 stated; exact date and regions not given. | Employees creating repeatable browser workflows. | Microsoft 365 Copilot license with usage-based billing enabled. | [Microsoft Edge blog](https://blogs.windows.com/msedgedev/2026/11/17/edge-for-business-ignite-2026-innovations/). |\n| **Microsoft Edge for Business \u2014 managed agent browsing** | Provides a governed browser experience for Microsoft and other agents under IT-managed policies. | Preview. | Date and regions not stated. | IT administrators and organizations using browser agents. | The official excerpt surfaced here does not specify a license prerequisite. | [Microsoft Edge blog](https://blogs.windows.com/msedgedev/2026/11/17/edge-for-business-ignite-2026-innovations/). |\n| **Microsoft Agent 365 \u2014 Business Analytics** | Shows AI-service/agent spend and measures assistance value; supports forecasting and recommendations. | Frontier. | Available in Frontier at Ignite; regions not stated. | Business leaders, with IT involvement in guardrails and chargeback. | Microsoft-service insights require at least one Microsoft 365 Copilot license in the tenant; non-Microsoft-service insights require an Agent 365 license. | [Book of News](https://news.microsoft.com/events/ignite/2026/book-of-news/). |\n| **Microsoft Agent 365 \u2014 agent management insights** | Expands agent overview, active-user and activity/session metrics for Microsoft agents. | GA. | GA announced at Ignite; regions not stated. | Administrators and organizations monitoring agent use. | Basic Microsoft-agent insights do not require Agent 365; full governance/security and specified third-party-agent insights require Agent 365 or ME7. Viva Insights agent insights retain a requirement of at least 50 assigned Copilot licenses. | [Book of News](https://news.microsoft.com/events/ignite/2026/book-of-news/). |\n| **Microsoft Agent 365 \u2014 action center and governance** | Action center is intended to surface inactive and ownerless agents; Copilot/Cowork plugin and skill availability can be centrally managed. | Action center announced without a release date in the cited Book excerpt; plugin and skill governance GA. | Action-center date/regions not stated. | Microsoft 365 administrators. | Agent 365 or ME7 is required for enterprise-grade management, security, and governance; no separate prerequisite stated for plugin/skill governance. | [Book of News](https://news.microsoft.com/events/ignite/2026/book-of-news/). |\n| **Microsoft IQ / Work IQ / Fabric IQ / Foundry IQ / Web IQ** | Enterprise context platform bringing work, business, document, and web context to apps and agents; SharePoint indexed knowledge source is included in Foundry IQ retrieval. | Microsoft IQ GA, with no new SKU or subscription; individual connectors/features have their own statuses. | GA announced at Ignite; Web IQ GA to Azure customers. Regions otherwise not stated. | Organizations building or using AI apps and agents. | No new Microsoft IQ SKU or subscription; specific service use may have separate requirements not itemized in the cited announcement. | [Book of News](https://news.microsoft.com/events/ignite/2026/book-of-news/). |\n| **Microsoft Perception** | Security agents and playbooks for identifying, defending against, and remediating vulnerabilities; new capabilities include playbooks in SOC workflows. | GA, including agents and playbooks announced earlier. | GA announced at Ignite; regions not stated. | Security teams and defenders. | Not stated in the cited announcement. | [Microsoft Source recap](https://news.microsoft.com/source/2026/11/17/microsoft-ignite-2026-empowering-human-ambition,-intelligence-and-trust). |\n| **Windows \u2014 Endpoint Security Platform / Administrator Protection** | Endpoint Security Platform gives approved security products a safer protection path; Administrator Protection allows standard permissions by default with elevation when needed. | Both GA. | Announced at Ignite; regions not stated. | Windows users, IT administrators, and supported security-product vendors. | Not stated in the cited Windows post. | [Windows Experience blog](https://blogs.windows.com/windowsexperience/2026/11/17/microsoft-ignite-2026-building-windows-for-the-next-era-of-work/). |\n| **Windows \u2014 Execution Containers** | Contains agent execution and applies file/network boundaries; new process-container improvements strengthen isolation and identity. | Execution Containers GA on Windows 11 since October; process-container improvements preview. | GA since October 2026; preview date/regions not stated. | IT administrators securing local agents. | Not stated in the cited post. | [Windows Experience blog](https://blogs.windows.com/windowsexperience/2026/11/17/microsoft-ignite-2026-building-windows-for-the-next-era-of-work/). |\n| **Microsoft Entra \u2014 MCP Server for IT Admins** | Connects AI tools/agents to data and intelligence in Entra, Purview, and Intune for queries and administrative tasks. | GA. | Announced at Ignite; regions not stated. | IT administrators and agent builders. | Not stated in the cited post. | [Microsoft Entra blog](https://techcommunity.microsoft.com/blog/microsoft-entra-blog/ai-is-changing-access-see-how-microsoft-entra-helps-you-stay-ahead-/4556456). |\n| **Microsoft Entra / Agent 365 \u2014 Dynamic Agent Risk and assistive-agent policies** | Risk scoring uses identity, data, endpoint, cloud, network, runtime, and activity signals; preview policies can control agent-to-MCP communications. | Preview. | Date and regions not stated. | Identity and security administrators. | Not stated in the cited post. | [Microsoft Entra blog](https://techcommunity.microsoft.com/blog/microsoft-entra-blog/ai-is-changing-access-see-how-microsoft-entra-helps-you-stay-ahead-/4556456). |\n| **Microsoft Foundry \u2014 continuous-improvement tools** | Production insights group recurring agent failures; human annotation and programmed training add evaluation/training options. | Insights GA; human annotation and Programmed Training preview. | Announced at Ignite; regions not stated. | AI engineers and agent developers. | Not stated in the cited Book excerpt. | [Book of News](https://news.microsoft.com/events/ignite/2026/book-of-news/). |\n| **Microsoft Foundry \u2014 Microsoft-Decision-1.1** | Decision model for routing, classification, prioritization, verification, and workflow control. | GA. | Available in Microsoft Foundry and through OpenRouter and Vercel; regions not stated. | Developers and organizations deploying decision workflows. | Foundry/OpenRouter/Vercel access; no additional license prerequisite stated. | [Official Microsoft Blog](https://blogs.microsoft.com/blog/2026/11/17/ignite-2026-building-the-frontier-ecosystem/). |\n\n### Licensing, pricing, retirement, and industry-solution checks\n\n- **Microsoft IQ:** Microsoft says it is built on products customers already use and requires no new SKU or subscription.\n- **Agent 365 Business Analytics:** the Book states the tenant-level Copilot-license requirement for Microsoft services and Agent 365 requirement for non-Microsoft services; it does not state a new price for this Ignite announcement.\n- **Power Platform licensing:** the Ignite Power Platform post does not set out licensing prerequisites for the items summarized above; Power BI custom data apps are specifically described as preview access for Power BI Pro customers.\n- **Retirements and new product pricing:** I could not verify a specific Ignite-announced retirement or new price from the official Book/live excerpts cited here. I have therefore not imported unrelated retirement notices or prices into this event catalogue.\n- **Industry solutions:** the official coverage includes business-use examples, but the reviewed Ignite sources do not establish a distinct healthcare, manufacturing, retail, or other industry product launch with its own release status and licensing terms. Treat any such claim as **not verified as an Ignite product announcement**.\n- **Security Copilot:** I could not verify a distinct new Security Copilot product announcement with Ignite-specific status, availability, regions, and license terms in the official material cited here. Existing Security Copilot documentation is not evidence of a new Ignite launch.\n\n**Items needing official-page confirmation before procurement or rollout:** features with no published region, precise date, or licensing prerequisite above; the exact availability of the ERP-specific Work IQ scope because Microsoft\u2019s official posts differ in wording; and any claimed Security Copilot, industry-specific, price, or retirement announcement not directly confirmed in an official Microsoft Ignite/product page. The primary references are the [Book of News](https://news.microsoft.com/events/ignite/2026/book-of-news/) and [live news blog](https://news.microsoft.com/events/ignite/2026/live-news/).",
+     "type": "output_text",
+     "logprobs": null
+    }
+   ],
+   "role": "assistant",
+   "status": "completed",
+   "type": "message",
+   "phase": null
+  }
+ ],
+ "parallel_tool_calls": false,
+ "temperature": null,
+ "tool_choice": "auto",
+ "tools": [],
+ "top_p": null,
+ "background": null,
+ "completed_at": 1795425785,
+ "conversation": null,
+ "max_output_tokens": null,
+ "max_tool_calls": null,
+ "moderation": null,
+ "previous_response_id": null,
+ "prompt": null,
+ "prompt_cache_key": null,
+ "prompt_cache_retention": null,
+ "reasoning": null,
+ "safety_identifier": null,
+ "service_tier": null,
+ "status": "completed",
+ "text": null,
+ "top_logprobs": null,
+ "truncation": null,
+ "usage": null,
+ "user": null,
+ "effort_used": "medium"
+}
