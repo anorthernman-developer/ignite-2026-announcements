@@ -7,8 +7,8 @@ from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment
 from openpyxl.worksheet.table import Table, TableStyleInfo
 
-RUN_DATE = "2026-11-18"
-RUN_TIME = "13:30 GMT"
+RUN_DATE = "2026-11-23"
+RUN_TIME = "09:00 GMT"
 REPO = "https://github.com/anorthernman-developer/ignite-2026-announcements"
 FAM_CODE = {data.F_COP:"COP",data.F_AG:"AGT",data.F_IQ:"IQ",data.F_AI:"AI",data.F_AZ:"AZ",data.F_DATA:"DATA",data.F_DEV:"DEV",
             data.F_SEC:"SEC",data.F_WIN:"WIN",data.F_EDGE:"EDGE",data.F_BIZ:"BIZ",data.F_PART:"PART",data.F_LIC:"LIC",data.F_IND:"IND"}
@@ -30,17 +30,28 @@ def status_category(s):
     if "available" in l: return "GA"
     return "Announced"
 
+# Stable ids and first_seen: reuse them from the previous data/announcements.json (matched on title)
+prev = {}
+if os.path.exists("data/announcements.json"):
+    for r in json.load(open("data/announcements.json"))["announcements"]:
+        prev[r["title"]] = r
+used = {}
+for r in prev.values():
+    code, n = r["id"].split("-")[1], int(r["id"].split("-")[2]); used[code] = max(used.get(code, 0), n)
 rows = []
-count = {}
 for r in sorted(data.R, key=lambda r: (FAM_ORDER.index(r["product_family"]), r["product"], r["title"])):
-    c = FAM_CODE[r["product_family"]]; count[c] = count.get(c, 0) + 1
-    out = {"id": f"IGN26-{c}-{count[c]:03d}", "title": r["title"], "announced_date": "2026-11-17" if r["ignite_scope"]=="Ignite 2026" else "",
+    c = FAM_CODE[r["product_family"]]
+    old = prev.get(r["title"])
+    if old: rid, first = old["id"], old["first_seen"]
+    else:
+        used[c] = used.get(c, 0) + 1; rid, first = f"IGN26-{c}-{used[c]:03d}", RUN_DATE
+    out = {"id": rid, "title": r["title"], "announced_date": "2026-11-17" if r["ignite_scope"]=="Ignite 2026" else "",
            "event": "Microsoft Ignite 2026", "ignite_scope": r["ignite_scope"], "product_family": r["product_family"], "product": r["product"],
            "capability_area": r["capability_area"], "announcement_type": r["announcement_type"], "status": r["status"],
            "status_category": status_category(r["status"]), "availability": r["availability"], "audience": r["audience"],
            "industry": r["industry"], "licensing": r["licensing"], "region": r["region"], "tags": r["tags"], "summary": r["summary"],
            "source_url": r["source_url"], "secondary_source": r["secondary_source"], "verification": r["verification"],
-           "related": "", "first_seen": RUN_DATE, "last_updated": RUN_DATE}
+           "related": "", "first_seen": first, "last_updated": first if not old else old["last_updated"]}
     rows.append(out)
 # related: same product
 byprod = {}
@@ -54,6 +65,7 @@ with open("data/announcements.csv", "w", newline="", encoding="utf-8") as f:
 json.dump({"generated": RUN_DATE, "count": len(rows), "announcements": rows}, open("data/announcements.json", "w"), indent=2, ensure_ascii=False)
 
 CHANGELOG = [
+ (RUN_DATE, "Run 2", "Added 11 announcements: Teams agent capabilities, Viva Engage and Power Platform. Ids and first_seen are now kept stable between runs."),
  (RUN_DATE, "Run 1 (first build)", f"Created repo. Captured {len(rows)} announcements from the live news blog, Book of News and official Microsoft blogs, cross-checked with 3 Parallel test runs and 1 Parallel deep research run."),
  (RUN_DATE, "Format change", "Added verification, ignite_scope, secondary_source, licensing and status_category columns after reviewing the Parallel runs."),
  (RUN_DATE, "Format change", "Separated adjacent November partner and licensing items from Ignite stage announcements using ignite_scope."),

@@ -2,7 +2,7 @@
 import json, os, sys
 sys.path.insert(0, os.path.dirname(__file__)); import data
 FAM_DEF = {
- data.F_COP:"Microsoft 365 Copilot, the Copilot app, Office in Copilot, Cowork, Code, Autopilot, SharePoint, OneDrive and Teams experiences.",
+ data.F_COP:"Microsoft 365 Copilot, the Copilot app, Office in Copilot, Cowork, Code, Autopilot, SharePoint, OneDrive, Teams and Viva Engage experiences.",
  data.F_AG:"Building, running, governing and paying for agents: Agent 365, Copilot Studio, Windows 365 for Agents.",
  data.F_IQ:"Enterprise context layer: Microsoft IQ, Work IQ, Fabric IQ, Foundry IQ, Web IQ.",
  data.F_AI:"Models (MAI, OpenAI, Meta, Microsoft-Decision), Microsoft Foundry platform services and AI silicon.",
@@ -12,7 +12,7 @@ FAM_DEF = {
  data.F_SEC:"Microsoft Perception, Defender, Sentinel, Entra, Purview, Baseline Security Mode, MDASH and responsible AI.",
  data.F_WIN:"Windows 11, Windows 365, Intune and endpoint management.",
  data.F_EDGE:"Edge for Business security and governed AI browsing.",
- data.F_BIZ:"Dynamics 365, Power Platform and contact centre.",
+ data.F_BIZ:"Dynamics 365, Power Apps, Power Platform and contact centre.",
  data.F_PART:"Strategic partnerships announced at Ignite (for example Salesforce).",
  data.F_LIC:"Licensing, pricing, billing, retirements and partner programme changes.",
  data.F_IND:"Industry-specific solutions (healthcare, financial services, public sector and others).",
@@ -24,7 +24,7 @@ for f, d in FAM_DEF.items():
         if r["product_family"] == f: prods.setdefault(r["product"], set()).add(r["capability_area"])
     fams.append({"name": f, "definition": d, "products": [{"name": p, "capability_areas": sorted(c)} for p, c in sorted(prods.items())]})
 def vals(pairs): return [{"name": n, "definition": d} for n, d in pairs]
-tax = {"name": "Microsoft Ignite 2026 announcement taxonomy", "version": "1.0", "updated": "2026-11-18",
+tax = {"name": "Microsoft Ignite 2026 announcement taxonomy", "version": "1.0", "updated": "2026-11-23",
  "dimensions": {
   "product_family": {"definition": "Top level grouping. Hierarchy: product_family > product > capability_area.", "values": fams},
   "announcement_type": {"definition": "What kind of news it is.", "values": vals([
