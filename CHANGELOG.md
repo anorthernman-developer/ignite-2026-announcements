@@ -2,6 +2,30 @@
 
 All dates and times are UK time (GMT).
 
+## 23 November 2026, 09:45 GMT: run 3, Parallel deep research and monitor sweep
+
+Added (13 announcements, total now 144)
+- Microsoft Foundry (2): browser automation, computer use and A2A tool GA, with Work IQ and Fabric IQ integrations in preview; hosted agents scale and enterprise controls (shared subnet IPs GA, other controls in public preview). Source: Microsoft Foundry Blog, 18 Nov 2026.
+- Azure API Management (3): Azure AI Gateway GA as a standalone service; Agent 365 integration with API Management and AI Gateway GA; Premium v2 in 35 Azure regions. Source: Azure API Management Ignite post, 17 Nov 2026.
+- Azure Functions (4): Managed Connectors GA; Durable Task Scheduler and Durable Extension for Microsoft Agent Framework (GA and preview); hosted skills, agent bindings, Canvas and Skills (public preview); Go and .NET 11 GA, Python 3.15 and Node.js 26 in preview. Source: Azure Functions Ignite post, 17 Nov 2026.
+- Microsoft Intune (1): Vulnerability Remediation Agent (limited public preview). Source: Intune Ignite post.
+- SharePoint (1): Work IQ context enhancements (public preview from November). Source: SharePoint and OneDrive Ignite post.
+- Edge for Business (1): writing assistance and Journeys (preview). Source: Edge for Business Ignite post, 17 Nov 2026.
+- Microsoft Sentinel (1): automation audit logs and Data and Connectors overview (public preview), ingest-time normalisation (public preview December 2026), Connector Builder Agent (GA by end of November). Source: Sentinel Ignite post, 16 Nov 2026.
+
+How the run went
+- Deep research was requested at high effort and timed out at the Parallel MCP connector. It completed at medium effort with the same prompt.
+- The monitor sweep (Parallel web search with the monitor query) returned 10 official pages; 4 had not been cited before and gave 10 of the new rows.
+- Every new row was checked on its official page on 23 November 2026. Raw outputs are in research/parallel/2026-11-23/.
+
+Checked and unchanged
+- No status changes found for existing rows.
+- Edge Cowork agentic browsing and the Entra MCP Server for IT admins were already covered by existing rows. SharePoint Knowledge Base and Copilot in SharePoint GA were released in October, before Ignite, so they were not added.
+
+Known gaps
+- Security Copilot and industry solutions beyond Dragon Copilot: still no official Ignite announcement found.
+- Edge interactive brief and Microsoft 365 Resources for Agents in Foundry: no release status on the official page, so not added.
+
 ## 23 November 2026, 09:00 GMT: run 2, post-event update
 
 Added (11 announcements, total now 131)

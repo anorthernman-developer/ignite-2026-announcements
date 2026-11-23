@@ -150,3 +150,21 @@ Use these as Parallel web_search queries (3 to 6 words each) or as Monitor keywo
 - Find official Microsoft announcements from Ignite 2026 for <product>, with release status, availability date and source URL.
 - Find any status change since 18 November 2026 for <announcement title>, for example preview to GA.
 - Find licence prerequisites and pricing for <announcement title> on an official Microsoft page.
+
+### Added 23 November 2026 (run 3)
+- What's new Ignite 2026 site:devblogs.microsoft.com
+- Azure API Management Ignite 2026 AI Gateway
+- Azure Functions Durable Task Scheduler Ignite 2026
+- Foundry Agent Service Ignite 2026 browser automation
+- Microsoft Sentinel Ignite 2026 what's new
+- Intune Vulnerability Remediation Agent
+- Edge for Business writing assistance Journeys
+- SharePoint Work IQ context enhancements
+
+## 5. Notes from runs
+
+23 November 2026 (run 3)
+- The monitor query worked well as a web_search objective. Product-level "What's new at Ignite 2026" posts on techcommunity.microsoft.com and devblogs.microsoft.com gave most new rows, so the Azure services terms above were added.
+- The Parallel web_search API accepts 5 search_queries per call; a sixth is dropped. Split longer lists across calls.
+- The deep research prompt at high effort timed out at the Parallel MCP connector again (18 and 23 November). Medium completes in about a minute. Use the Parallel web app or asynchronous Task API for high effort.
+- At medium effort the deep research mostly repeats Book of News items already in the data. Next time, add this line to the prompt to focus it: "Exclude items already listed in https://github.com/anorthernman-developer/ignite-2026-announcements/blob/main/LLM.TXT and report only announcements or status changes not in that file."
