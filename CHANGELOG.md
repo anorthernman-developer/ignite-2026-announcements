@@ -2,6 +2,27 @@
 
 All dates and times are UK time (GMT).
 
+## 23 November 2026, 09:00 GMT: run 2, post-event update
+
+Added (11 announcements, total now 131)
+- Microsoft Teams (3): Agentic Users (public preview); agent threads, plans and steps, HTML widgets and socket mode (public preview); streaming and extended Markdown for agents (available now). Source: Microsoft 365 Developer Blog, 17 Nov 2026.
+- Viva Engage (4): Community Agent updates (public preview); Communities in Teams (GA); communication plans (private preview); Engage plugin and 17 skills for Copilot Cowork. Source: Viva Engage Tech Community post, 17 Nov 2026.
+- Power Platform (4): Copilot in canvas apps (GA, November 2026); business applications in Work IQ (public preview); hybrid authoring with agents through MCP servers; quality and maker improvements. Source: Power Platform blog, 18 Nov 2026, and the October/November feature update.
+
+Checked and unchanged
+- The live news blog (shows the keynote entries only) and the Book of News: every Book of News item was already in the data. No status changes found.
+
+Fixes
+- Ids and first_seen dates are now carried over from the previous data/announcements.json, so adding rows no longer renumbers existing ids.
+- README count tables refreshed; taxonomy product lists regenerate from data.py (new products: Viva Engage, Power Apps, Power Platform).
+- Spreadsheet is rebuilt by the GitHub Actions workflow (build.yml) on push to scripts/.
+
+Known gaps
+- No Ignite-dated official post found for Security Copilot. The Learn what's-new page has no Ignite entries yet.
+- Teams Channel Backup (private preview) and Teams real-time transcripts are reported only by third parties so far; not added.
+- Power Platform Studio is mentioned only in third-party posts; not added.
+- The two earlier scheduled runs left no trace in the repository (no commits, and the only recorded workflow run succeeded), so they failed before pushing anything. The exact error is not visible from here.
+
 ## 18 November 2026, 13:30 GMT: run 1, first build
 
 Added

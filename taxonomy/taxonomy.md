@@ -8,7 +8,7 @@ Three levels: product family > product > capability area.
 
 ### Microsoft Copilot
 
-Microsoft 365 Copilot, the Copilot app, Office in Copilot, Cowork, Code, Autopilot, SharePoint, OneDrive and Teams experiences.
+Microsoft 365 Copilot, the Copilot app, Office in Copilot, Cowork, Code, Autopilot, SharePoint, OneDrive, Teams and Viva Engage experiences.
 
 - Autopilot: Autonomous agents
 - Copilot Code: App building
@@ -20,8 +20,9 @@ Microsoft 365 Copilot, the Copilot app, Office in Copilot, Cowork, Code, Autopil
 - Copilot in OneNote: Content creation
 - Copilot plugins: Extensibility
 - Microsoft Copilot app: Collaboration, Copilot experience, Office apps, Proactive assistance
-- Microsoft Teams: Meeting security
+- Microsoft Teams: Agent experiences, Agent identity, Meeting security
 - SharePoint: Content governance
+- Viva Engage: Communities, Community Agent, Copilot and Cowork, Employee communications
 
 ### Agents and agent governance
 
@@ -120,10 +121,12 @@ Edge for Business security and governed AI browsing.
 
 ### Business applications
 
-Dynamics 365, Power Platform and contact centre.
+Dynamics 365, Power Apps, Power Platform and contact centre.
 
 - Dynamics 365: Copilot plugins, Migration
 - Dynamics 365 Contact Center: Contact centre
+- Power Apps: Copilot in apps
+- Power Platform: Agentic authoring, Platform quality, Work IQ
 
 ### Partnerships and ecosystem
 

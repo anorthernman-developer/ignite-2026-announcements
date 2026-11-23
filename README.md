@@ -4,7 +4,7 @@ A public, sourced record of the product and service news from Microsoft Ignite 2
 
 Primary source: the [Ignite 2026 live news blog](https://news.microsoft.com/events/ignite/2026/live-news/), then the [Book of News](https://news.microsoft.com/events/ignite/2026/book-of-news/) and the official Microsoft blogs they link to. Every row cites an official page. Nothing is added without one.
 
-Last build: 18 November 2026, 13:30 GMT. Announcements captured: 120 (112 from Ignite itself, 8 adjacent licensing and partner items, marked as such).
+Last build: 23 November 2026, 09:00 GMT. Announcements captured: 131 (123 from Ignite itself, 8 adjacent licensing and partner items, marked as such).
 
 ## Start here
 
@@ -48,17 +48,17 @@ Status is kept twice: Microsoft's own wording in `status`, and a normalised `sta
 
 | Product family | Count |
 | --- | --- |
+| Microsoft Copilot | 25 |
 | Security, identity and compliance | 19 |
-| Microsoft Copilot | 18 |
 | Azure infrastructure and operations | 15 |
 | Agents and agent governance | 14 |
 | AI models and Microsoft Foundry | 13 |
 | Data and databases | 10 |
+| Business applications | 7 |
 | Developer tools and GitHub | 7 |
 | Licensing, pricing and partner programme | 7 |
 | Windows, Windows 365 and endpoint management | 6 |
 | Microsoft IQ | 5 |
-| Business applications | 3 |
 | Microsoft Edge | 2 |
 | Partnerships and ecosystem | 1 |
 
@@ -66,16 +66,16 @@ Status is kept twice: Microsoft's own wording in `status`, and a normalised `sta
 
 | Status category | Count |
 | --- | --- |
-| GA | 31 |
+| GA | 35 |
 | Mixed | 25 |
+| Public preview | 19 |
 | Preview (stage not stated) | 18 |
-| Public preview | 15 |
+| Announced | 10 |
 | Frontier | 8 |
-| Announced | 8 |
-| Private or limited preview | 5 |
+| Private or limited preview | 6 |
 | Coming soon | 3 |
-| Retirement | 3 |
 | Licensing change | 3 |
+| Retirement | 3 |
 | Milestone | 1 |
 
 ## Update cadence
@@ -94,6 +94,6 @@ python scripts/build.py
 
 - Microsoft's Book of News notes its instant summaries are AI-generated. Rows are written from the full item text and product blogs.
 - Rows marked with a verification value other than Book of News or an official blog are re-read on the next run.
-- Known gaps: Power Apps and Power Automate, Security Copilot, Teams-specific Ignite post and most industry news. See [research/parallel/2026-11-18/README.md](research/parallel/2026-11-18/README.md).
+- Known gaps: Security Copilot (no Ignite-dated official post found yet), Power Automate (only covered through the Power Platform Ignite post), the Teams Ignite what's-new post for end users, Teams Channel Backup (private preview, only third-party coverage found so far) and most industry news. See [research/parallel/2026-11-18/README.md](research/parallel/2026-11-18/README.md).
 
 Maintained for Craig Stanley. Not affiliated with Microsoft.

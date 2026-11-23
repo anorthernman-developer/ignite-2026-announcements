@@ -132,6 +132,19 @@ Use these as Parallel web_search queries (3 to 6 words each) or as Monitor keywo
 - What's new Microsoft Teams Ignite 2026
 - Ignite 2026 healthcare retail manufacturing public sector
 
+### Added 23 November 2026
+- Teams Agentic Users public preview
+- Teams agent HTML widgets socket mode Teams SDK
+- Viva Engage Community Agent Ignite 2026
+- Viva Engage communication plans private preview
+- Copilot in canvas apps generally available
+- Business applications in Work IQ Power Apps
+- Power Platform Ignite 2026 hybrid authoring MCP servers
+- Power Automate desktop Flowchart view Flow Map
+- Teams Channel Backup private preview
+- Teams real-time transcripts Work IQ
+- Security Analyst Agent Security Copilot Ignite
+
 ## 4. Objectives (for Parallel objective fields)
 
 - Find official Microsoft announcements from Ignite 2026 for <product>, with release status, availability date and source URL.
