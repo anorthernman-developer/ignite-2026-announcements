@@ -8,7 +8,7 @@ from openpyxl.styles import Font, PatternFill, Alignment
 from openpyxl.worksheet.table import Table, TableStyleInfo
 
 RUN_DATE = "2026-11-23"
-RUN_TIME = "09:00 GMT"
+RUN_TIME = "09:45 GMT"
 REPO = "https://github.com/anorthernman-developer/ignite-2026-announcements"
 FAM_CODE = {data.F_COP:"COP",data.F_AG:"AGT",data.F_IQ:"IQ",data.F_AI:"AI",data.F_AZ:"AZ",data.F_DATA:"DATA",data.F_DEV:"DEV",
             data.F_SEC:"SEC",data.F_WIN:"WIN",data.F_EDGE:"EDGE",data.F_BIZ:"BIZ",data.F_PART:"PART",data.F_LIC:"LIC",data.F_IND:"IND"}
@@ -65,6 +65,7 @@ with open("data/announcements.csv", "w", newline="", encoding="utf-8") as f:
 json.dump({"generated": RUN_DATE, "count": len(rows), "announcements": rows}, open("data/announcements.json", "w"), indent=2, ensure_ascii=False)
 
 CHANGELOG = [
+ (RUN_DATE, "Run 3 (Parallel)", "Added 13 announcements from a Parallel deep research run (medium effort after high timed out) and a monitor sweep: Foundry Agent Service, Azure AI Gateway, API Management, Azure Functions, Intune, SharePoint, Edge for Business and Sentinel."),
  (RUN_DATE, "Run 2", "Added 11 announcements: Teams agent capabilities, Viva Engage and Power Platform. Ids and first_seen are now kept stable between runs."),
  (RUN_DATE, "Run 1 (first build)", f"Created repo. Captured {len(rows)} announcements from the live news blog, Book of News and official Microsoft blogs, cross-checked with 3 Parallel test runs and 1 Parallel deep research run."),
  (RUN_DATE, "Format change", "Added verification, ignite_scope, secondary_source, licensing and status_category columns after reviewing the Parallel runs."),
