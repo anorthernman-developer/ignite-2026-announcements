@@ -85,7 +85,8 @@
             {
               "name": "SharePoint",
               "capability_areas": [
-                "Content governance"
+                "Content governance",
+                "Work IQ"
               ]
             },
             {
@@ -196,7 +197,9 @@
               "name": "Microsoft Foundry",
               "capability_areas": [
                 "Agent harness",
+                "Agent tools",
                 "Continuous improvement",
+                "Hosted agents",
                 "Model catalogue",
                 "Model routing"
               ]
@@ -214,9 +217,22 @@
           "definition": "Azure compute, operations, migration, AI infrastructure, Azure Local, sovereign cloud and Windows Server.",
           "products": [
             {
+              "name": "Azure AI Gateway",
+              "capability_areas": [
+                "AI gateway"
+              ]
+            },
+            {
               "name": "Azure AI infrastructure",
               "capability_areas": [
                 "AI infrastructure"
+              ]
+            },
+            {
+              "name": "Azure API Management",
+              "capability_areas": [
+                "Agent governance",
+                "Regions"
               ]
             },
             {
@@ -235,6 +251,15 @@
               "name": "Azure Copilot",
               "capability_areas": [
                 "Agentic operations"
+              ]
+            },
+            {
+              "name": "Azure Functions",
+              "capability_areas": [
+                "Agentic functions",
+                "Connectors",
+                "Durable execution",
+                "Language runtimes"
               ]
             },
             {
@@ -436,7 +461,8 @@
             {
               "name": "Microsoft Sentinel",
               "capability_areas": [
-                "SIEM connectors"
+                "SIEM connectors",
+                "SIEM operations"
               ]
             },
             {
@@ -454,7 +480,8 @@
             {
               "name": "Microsoft Intune",
               "capability_areas": [
-                "Endpoint management"
+                "Endpoint management",
+                "Vulnerability management"
               ]
             },
             {
@@ -481,6 +508,7 @@
               "name": "Edge for Business",
               "capability_areas": [
                 "Browser security",
+                "Built-in AI",
                 "Governed AI"
               ]
             }
