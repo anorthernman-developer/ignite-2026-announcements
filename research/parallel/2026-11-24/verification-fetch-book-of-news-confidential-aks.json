@@ -1,0 +1,23 @@
+{
+  "extract_id": "extract_ea38e3f1e332a00670a355eb39775c3e",
+  "session_id": "session_ea38e3f1e332a00670a355eb39775c3e",
+  "status": "ok",
+  "results": [
+    {
+      "url": "https://news.microsoft.com/events/ignite/2026/book-of-news/",
+      "title": "Microsoft Ignite 2026 | Book of News",
+      "publish_date": "2026-09-30",
+      "excerpts": [
+        "# Microsoft Ignite 2026\n## Azure\n### Brand, infra & silicon\n#### Azure expands confidential computing for protecting highly sensitive data\n* VR72 multi-GPU confidential computing that will advance Azure\u2019s confidential computing AI roadmap and open a path to protect large models that extend beyond a single GPU.\n* Azure Confidential Enclaves and AKS Kata CoCo confidential containers, whichwillcreate a smaller trusted execution environment within a broader virtual machine.\nThis will help businesses narrow what must be trusted and verified instead of placing that trust in the entire surrounding system.\n* Azure Confidential Clean Room, which will enable organizations to bring data together for multiparty analytics while helping protect each participant\u2019s sensitive raw data from other collaborators and cloud operators.\nThis will open new opportunities to generate shared insights without giving up control of protected information.\n\n...\n\n### Azure infrastructure foundation for production AI applications and agents\n* **Agent Grid** will secure interactions among agents, models, tools and Azure services with centralized policy enforcement.\n* **Agent Sandbox extension for AKS** will run agent-written code in sandboxes isolated at the virtual-machine level.\n* **Flex nodes for AKS** will extend the same AKS clusters to customer servers outside Azure."
+      ]
+    }
+  ],
+  "errors": [],
+  "usage": [
+    {
+      "name": "sku_extract_excerpts",
+      "count": 1
+    }
+  ],
+  "warnings": []
+}

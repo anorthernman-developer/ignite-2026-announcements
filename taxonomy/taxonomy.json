@@ -1,7 +1,7 @@
 {
   "name": "Microsoft Ignite 2026 announcement taxonomy",
   "version": "1.0",
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "dimensions": {
     "product_family": {
       "definition": "Top level grouping. Hierarchy: product_family > product > capability_area.",
@@ -85,7 +85,10 @@
             {
               "name": "SharePoint",
               "capability_areas": [
+                "Agent governance",
                 "Content governance",
+                "Security and compliance",
+                "Storage and lifecycle",
                 "Work IQ"
               ]
             },
@@ -102,8 +105,14 @@
         },
         {
           "name": "Agents and agent governance",
-          "definition": "Building, running, governing and paying for agents: Agent 365, Copilot Studio, Windows 365 for Agents.",
+          "definition": "Building, running, tuning, governing and paying for agents: Agent 365, Copilot Studio, Frontier Tuning, Windows 365 for Agents.",
           "products": [
+            {
+              "name": "Frontier Tuning",
+              "capability_areas": [
+                "Agent tuning"
+              ]
+            },
             {
               "name": "Microsoft Agent 365",
               "capability_areas": [
@@ -201,7 +210,8 @@
                 "Continuous improvement",
                 "Hosted agents",
                 "Model catalogue",
-                "Model routing"
+                "Model routing",
+                "Voice agents"
               ]
             },
             {
@@ -405,12 +415,18 @@
         },
         {
           "name": "Security, identity and compliance",
-          "definition": "Microsoft Perception, Defender, Sentinel, Entra, Purview, Baseline Security Mode, MDASH and responsible AI.",
+          "definition": "Microsoft Perception, Defender, Sentinel, Entra, Purview, Microsoft 365 Backup, Baseline Security Mode, MDASH and responsible AI.",
           "products": [
             {
               "name": "Codename MDASH",
               "capability_areas": [
                 "Code security"
+              ]
+            },
+            {
+              "name": "Microsoft 365 Backup",
+              "capability_areas": [
+                "Resilience"
               ]
             },
             {
@@ -441,7 +457,8 @@
                 "Access control",
                 "Agent identity",
                 "Authentication",
-                "Platform"
+                "Platform",
+                "Resilience"
               ]
             },
             {
@@ -455,6 +472,7 @@
               "capability_areas": [
                 "Classification",
                 "Data security for AI",
+                "Information barriers",
                 "Network DLP"
               ]
             },
@@ -522,7 +540,8 @@
               "name": "Dynamics 365",
               "capability_areas": [
                 "Copilot plugins",
-                "Migration"
+                "Migration",
+                "Work IQ"
               ]
             },
             {

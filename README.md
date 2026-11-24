@@ -4,7 +4,7 @@ A public, sourced record of the product and service news from Microsoft Ignite 2
 
 Primary source: the [Ignite 2026 live news blog](https://news.microsoft.com/events/ignite/2026/live-news/), then the [Book of News](https://news.microsoft.com/events/ignite/2026/book-of-news/) and the official Microsoft blogs they link to. Every row cites an official page. Nothing is added without one.
 
-Last build: 23 November 2026, 09:45 GMT. Announcements captured: 144 (136 from Ignite itself, 8 adjacent licensing and partner items, marked as such).
+Last build: 24 November 2026, 09:45 GMT. Announcements captured: 159 (151 from Ignite itself, 8 adjacent licensing and partner items, marked as such).
 
 ## Start here
 
@@ -48,16 +48,16 @@ Status is kept twice: Microsoft's own wording in `status`, and a normalised `sta
 
 | Product family | Count |
 | --- | --- |
-| Microsoft Copilot | 26 |
+| Microsoft Copilot | 32 |
+| Security, identity and compliance | 24 |
 | Azure infrastructure and operations | 22 |
-| Security, identity and compliance | 20 |
-| AI models and Microsoft Foundry | 15 |
-| Agents and agent governance | 14 |
-| Data and databases | 10 |
-| Business applications | 7 |
+| AI models and Microsoft Foundry | 17 |
+| Agents and agent governance | 15 |
+| Data and databases | 11 |
+| Business applications | 8 |
 | Developer tools and GitHub | 7 |
-| Licensing, pricing and partner programme | 7 |
 | Windows, Windows 365 and endpoint management | 7 |
+| Licensing, pricing and partner programme | 7 |
 | Microsoft IQ | 5 |
 | Microsoft Edge | 3 |
 | Partnerships and ecosystem | 1 |
@@ -66,16 +66,16 @@ Status is kept twice: Microsoft's own wording in `status`, and a normalised `sta
 
 | Status category | Count |
 | --- | --- |
-| GA | 39 |
-| Mixed | 30 |
-| Public preview | 22 |
-| Preview (stage not stated) | 19 |
-| Announced | 10 |
+| GA | 41 |
+| Mixed | 40 |
+| Public preview | 25 |
+| Preview (stage not stated) | 18 |
+| Announced | 9 |
 | Frontier | 8 |
-| Private or limited preview | 6 |
+| Private or limited preview | 8 |
 | Coming soon | 3 |
-| Licensing change | 3 |
 | Retirement | 3 |
+| Licensing change | 3 |
 | Milestone | 1 |
 
 ## Update cadence

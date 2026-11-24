@@ -21,13 +21,14 @@ Microsoft 365 Copilot, the Copilot app, Office in Copilot, Cowork, Code, Autopil
 - Copilot plugins: Extensibility
 - Microsoft Copilot app: Collaboration, Copilot experience, Office apps, Proactive assistance
 - Microsoft Teams: Agent experiences, Agent identity, Meeting security
-- SharePoint: Content governance, Work IQ
+- SharePoint: Agent governance, Content governance, Security and compliance, Storage and lifecycle, Work IQ
 - Viva Engage: Communities, Community Agent, Copilot and Cowork, Employee communications
 
 ### Agents and agent governance
 
-Building, running, governing and paying for agents: Agent 365, Copilot Studio, Windows 365 for Agents.
+Building, running, tuning, governing and paying for agents: Agent 365, Copilot Studio, Frontier Tuning, Windows 365 for Agents.
 
+- Frontier Tuning: Agent tuning
 - Microsoft Agent 365: Adoption, Connected platforms, Discovery, FinOps for AI, Governance, Observability, Risk
 - Microsoft Copilot Studio: Agent building
 - Windows 365 for Agents: Computer use
@@ -49,7 +50,7 @@ Models (MAI, OpenAI, Meta, Microsoft-Decision), Microsoft Foundry platform servi
 - Dragon Copilot: Clinical documentation
 - MAI models: Coding models, Image models, Model access, Productivity models, Security models, Speech models
 - Maia: AI silicon
-- Microsoft Foundry: Agent harness, Agent tools, Continuous improvement, Hosted agents, Model catalogue, Model routing
+- Microsoft Foundry: Agent harness, Agent tools, Continuous improvement, Hosted agents, Model catalogue, Model routing, Voice agents
 - Microsoft-Decision-1.1: Decision models
 
 ### Azure infrastructure and operations
@@ -96,15 +97,16 @@ GitHub Copilot, GitHub Enterprise, Copilot SDK and developer tooling.
 
 ### Security, identity and compliance
 
-Microsoft Perception, Defender, Sentinel, Entra, Purview, Baseline Security Mode, MDASH and responsible AI.
+Microsoft Perception, Defender, Sentinel, Entra, Purview, Microsoft 365 Backup, Baseline Security Mode, MDASH and responsible AI.
 
 - Codename MDASH: Code security
+- Microsoft 365 Backup: Resilience
 - Microsoft Agent 365: Security partnerships
 - Microsoft Baseline Security Mode: Secure by default
 - Microsoft Defender: Agent security, Attack disruption, Endpoint security, On-premises security, Security operations
-- Microsoft Entra: Access control, Agent identity, Authentication, Platform
+- Microsoft Entra: Access control, Agent identity, Authentication, Platform, Resilience
 - Microsoft Perception: Agentic security
-- Microsoft Purview: Classification, Data security for AI, Network DLP
+- Microsoft Purview: Classification, Data security for AI, Information barriers, Network DLP
 - Microsoft Sentinel: SIEM connectors, SIEM operations
 - Responsible AI: AI governance
 
@@ -126,7 +128,7 @@ Edge for Business security and governed AI browsing.
 
 Dynamics 365, Power Apps, Power Platform and contact centre.
 
-- Dynamics 365: Copilot plugins, Migration
+- Dynamics 365: Copilot plugins, Migration, Work IQ
 - Dynamics 365 Contact Center: Contact centre
 - Power Apps: Copilot in apps
 - Power Platform: Agentic authoring, Platform quality, Work IQ

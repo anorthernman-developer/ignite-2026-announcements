@@ -3,13 +3,13 @@ import json, os, sys
 sys.path.insert(0, os.path.dirname(__file__)); import data
 FAM_DEF = {
  data.F_COP:"Microsoft 365 Copilot, the Copilot app, Office in Copilot, Cowork, Code, Autopilot, SharePoint, OneDrive, Teams and Viva Engage experiences.",
- data.F_AG:"Building, running, governing and paying for agents: Agent 365, Copilot Studio, Windows 365 for Agents.",
+ data.F_AG:"Building, running, tuning, governing and paying for agents: Agent 365, Copilot Studio, Frontier Tuning, Windows 365 for Agents.",
  data.F_IQ:"Enterprise context layer: Microsoft IQ, Work IQ, Fabric IQ, Foundry IQ, Web IQ.",
  data.F_AI:"Models (MAI, OpenAI, Meta, Microsoft-Decision), Microsoft Foundry platform services and AI silicon.",
  data.F_AZ:"Azure compute, operations, migration, AI infrastructure, Azure Local, sovereign cloud and Windows Server.",
  data.F_DATA:"Microsoft Fabric, Power BI and Azure databases (HorizonDB, SQL, Cosmos DB, DocumentDB, PostgreSQL, Redis).",
  data.F_DEV:"GitHub Copilot, GitHub Enterprise, Copilot SDK and developer tooling.",
- data.F_SEC:"Microsoft Perception, Defender, Sentinel, Entra, Purview, Baseline Security Mode, MDASH and responsible AI.",
+ data.F_SEC:"Microsoft Perception, Defender, Sentinel, Entra, Purview, Microsoft 365 Backup, Baseline Security Mode, MDASH and responsible AI.",
  data.F_WIN:"Windows 11, Windows 365, Intune and endpoint management.",
  data.F_EDGE:"Edge for Business security and governed AI browsing.",
  data.F_BIZ:"Dynamics 365, Power Apps, Power Platform and contact centre.",
@@ -24,7 +24,7 @@ for f, d in FAM_DEF.items():
         if r["product_family"] == f: prods.setdefault(r["product"], set()).add(r["capability_area"])
     fams.append({"name": f, "definition": d, "products": [{"name": p, "capability_areas": sorted(c)} for p, c in sorted(prods.items())]})
 def vals(pairs): return [{"name": n, "definition": d} for n, d in pairs]
-tax = {"name": "Microsoft Ignite 2026 announcement taxonomy", "version": "1.0", "updated": "2026-11-23",
+tax = {"name": "Microsoft Ignite 2026 announcement taxonomy", "version": "1.0", "updated": "2026-11-24",
  "dimensions": {
   "product_family": {"definition": "Top level grouping. Hierarchy: product_family > product > capability_area.", "values": fams},
   "announcement_type": {"definition": "What kind of news it is.", "values": vals([

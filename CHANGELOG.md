@@ -2,6 +2,33 @@
 
 All dates and times are UK time (GMT).
 
+## 24 November 2026, 09:45 GMT: run 4, Parallel deep research and monitor sweep
+
+Added (15 announcements, total now 159)
+- SharePoint, Microsoft 365 Backup, Entra and Purview (10): SharePoint Governance Hub (admins GA December 2026, site owners public preview); restricted access for apps and agents and agentic user collaboration limits; App Intelligence and Content Events; automated file-level archive and inactive file policy; storage pay-as-you-go meter (GA January 2027) and tenant-wide version trimming; Multi-Geo default geo move; Agent rewind (private preview); Teams Channel Backup (private preview) and longer backup retention (GA); Entra Backup and Recovery Premium (public preview); information barriers Teams Explicit Mode and Agent Builder sharing. Source: SharePoint content governance post, 17 Nov 2026.
+- Microsoft Foundry (2): Toolboxes with skills, Web IQ web search and Snowflake, MongoDB and Databricks in the catalogue; voice agents GA with GPT Live 1 and Microsoft Realtime Flash 1. Sources: Microsoft Foundry Blog and Tech Community, 18 Nov 2026.
+- Frontier Tuning (1): private preview expands with a GitHub Copilot plugin, CLI and APIs and publishing to Cowork. Source: Microsoft 365 Developer Blog, 18 Nov 2026.
+- Dynamics 365 (1): Dynamics 365 ERP and Copilot Cowork in Business Applications in Work IQ (public preview). Source: Dynamics 365 blog, 18 Nov 2026.
+- Azure Managed Redis (1): migration tooling, caching guidance and keyspace notifications GA; shard-level metrics and IP filtering public preview. Source: Azure Managed Redis Ignite post, 17 Nov 2026.
+
+Status changes
+- Business applications in Work IQ: public preview to GA (18 Nov 2026).
+- SharePoint Admin Agent: Announced to GA; Agent Access Heatmap GA December 2026.
+- Azure Managed Redis Redis 8 and agent kit: preview confirmed as public preview.
+
+How the run went
+- Deep research ran at high effort (pro processor) through parallel-cli as an asynchronous task and completed in about 6 minutes; no fallback was needed. It returned only items already in the data, but showed Azure Confidential Clean Room and Flex nodes for AKS were missing from two summaries, now fixed.
+- The monitor sweep (Parallel web search, advanced mode, after 17 Nov 2026) returned 20 official pages; 6 had not been cited before and gave all 15 new rows.
+- Every new row was checked on its official page on 24 November 2026. Raw outputs are in research/parallel/2026-11-24/.
+
+Fixes
+- last_updated now changes when a row's status, source or summary changes.
+- Spreadsheet change log tab now shows the right dates for runs 1 and 2.
+
+Known gaps
+- Security Copilot and industry solutions beyond Dragon Copilot: still no official Ignite announcement found.
+- Teams real-time transcripts: still third-party only. Teams Channel Backup is now confirmed by Microsoft and added.
+
 ## 23 November 2026, 09:45 GMT: run 3, Parallel deep research and monitor sweep
 
 Added (13 announcements, total now 144)

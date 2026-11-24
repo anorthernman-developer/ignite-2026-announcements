@@ -24,7 +24,10 @@ Microsoft licensing, pricing, Copilot Credits, Microsoft 365 E5/E7, Copilot Busi
 
 ```
 Build a complete, de-duplicated catalogue of product and service announcements made at Microsoft Ignite 2026 (17-20 November 2026). Use the Book of News (https://news.microsoft.com/events/ignite/2026/book-of-news/) and the live news blog (https://news.microsoft.com/events/ignite/2026/live-news/) as primary sources, then official Microsoft blogs. For each announcement give: product family, product, capability, short description, status (GA, public preview, private preview, Frontier, coming soon, retirement, pricing), availability date and regions, audience, licensing prerequisites, and official source URL. Pay extra attention to Power Platform, Teams, SharePoint, Purview, Intune, Edge for Business, Security Copilot, licensing and industry solutions. Flag anything not verified on an official Microsoft page.
+Exclude items already listed in https://github.com/anorthernman-developer/ignite-2026-announcements/blob/main/LLM.TXT and report only announcements or status changes not in that file.
 ```
+
+Run it as an asynchronous task so high effort does not time out: `parallel-cli research run -f prompt.txt --processor pro --text --no-wait --json`, then `parallel-cli research poll <run_id> --timeout 1200 -o deep-research-pro`.
 
 ## 3. Keyword search terms by category
 
@@ -145,6 +148,18 @@ Use these as Parallel web_search queries (3 to 6 words each) or as Monitor keywo
 - Teams real-time transcripts Work IQ
 - Security Analyst Agent Security Copilot Ignite
 
+### Added 24 November 2026 (run 4)
+- SharePoint content governance Ignite 2026
+- Microsoft 365 Backup Teams Channel Backup
+- Entra Backup and Recovery Premium
+- Agent rewind Microsoft 365
+- Frontier Tuning private preview
+- Business Applications in Work IQ generally available
+- Dynamics 365 ERP in Work IQ
+- Foundry Toolboxes skills Shell tool
+- Voice agents Foundry Agent Service GA
+- Azure Managed Redis Ignite 2026
+
 ## 4. Objectives (for Parallel objective fields)
 
 - Find official Microsoft announcements from Ignite 2026 for <product>, with release status, availability date and source URL.
@@ -168,3 +183,9 @@ Use these as Parallel web_search queries (3 to 6 words each) or as Monitor keywo
 - The Parallel web_search API accepts 5 search_queries per call; a sixth is dropped. Split longer lists across calls.
 - The deep research prompt at high effort timed out at the Parallel MCP connector again (18 and 23 November). Medium completes in about a minute. Use the Parallel web app or asynchronous Task API for high effort.
 - At medium effort the deep research mostly repeats Book of News items already in the data. Next time, add this line to the prompt to focus it: "Exclude items already listed in https://github.com/anorthernman-developer/ignite-2026-announcements/blob/main/LLM.TXT and report only announcements or status changes not in that file."
+
+24 November 2026 (run 4)
+- Deep research at high effort worked when run through parallel-cli as an asynchronous task (`--processor pro --no-wait`, then a bounded poll). It finished in about 6 minutes. The MCP connector timeouts on 18 and 23 November were the synchronous call, not the processor.
+- The LLM.TXT exclusion line did not work well: the run said it could not complete the comparison with a 144-line file, and its candidates were all already in the data. It did help spot two items missing from summaries. Next time try asking it to list only items from product-level "What's new at Ignite 2026" posts on techcommunity.microsoft.com and devblogs.microsoft.com, rather than the Book of News.
+- The monitor sweep worked best with `--mode advanced`, `--after-date 2026-11-17` and 5 keyword queries alongside the monitor objective. It gave all 15 new rows. Single product posts such as the SharePoint content governance post can hold 10 or more announcements, so fetch them in full (`parallel-cli extract --full-content --full-content-max-chars 60000`); the default 15,000 characters cut the page off.
+

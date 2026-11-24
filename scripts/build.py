@@ -7,7 +7,7 @@ from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment
 from openpyxl.worksheet.table import Table, TableStyleInfo
 
-RUN_DATE = "2026-11-23"
+RUN_DATE = "2026-11-24"
 RUN_TIME = "09:45 GMT"
 REPO = "https://github.com/anorthernman-developer/ignite-2026-announcements"
 FAM_CODE = {data.F_COP:"COP",data.F_AG:"AGT",data.F_IQ:"IQ",data.F_AI:"AI",data.F_AZ:"AZ",data.F_DATA:"DATA",data.F_DEV:"DEV",
@@ -51,7 +51,7 @@ for r in sorted(data.R, key=lambda r: (FAM_ORDER.index(r["product_family"]), r["
            "status_category": status_category(r["status"]), "availability": r["availability"], "audience": r["audience"],
            "industry": r["industry"], "licensing": r["licensing"], "region": r["region"], "tags": r["tags"], "summary": r["summary"],
            "source_url": r["source_url"], "secondary_source": r["secondary_source"], "verification": r["verification"],
-           "related": "", "first_seen": first, "last_updated": first if not old else old["last_updated"]}
+           "related": "", "first_seen": first, "last_updated": first if not old else (RUN_DATE if (old["status"], old["source_url"], old["summary"]) != (r["status"], r["source_url"], r["summary"]) else old["last_updated"])}
     rows.append(out)
 # related: same product
 byprod = {}
@@ -65,12 +65,13 @@ with open("data/announcements.csv", "w", newline="", encoding="utf-8") as f:
 json.dump({"generated": RUN_DATE, "count": len(rows), "announcements": rows}, open("data/announcements.json", "w"), indent=2, ensure_ascii=False)
 
 CHANGELOG = [
- (RUN_DATE, "Run 3 (Parallel)", "Added 13 announcements from a Parallel deep research run (medium effort after high timed out) and a monitor sweep: Foundry Agent Service, Azure AI Gateway, API Management, Azure Functions, Intune, SharePoint, Edge for Business and Sentinel."),
- (RUN_DATE, "Run 2", "Added 11 announcements: Teams agent capabilities, Viva Engage and Power Platform. Ids and first_seen are now kept stable between runs."),
- (RUN_DATE, "Run 1 (first build)", f"Created repo. Captured {len(rows)} announcements from the live news blog, Book of News and official Microsoft blogs, cross-checked with 3 Parallel test runs and 1 Parallel deep research run."),
- (RUN_DATE, "Format change", "Added verification, ignite_scope, secondary_source, licensing and status_category columns after reviewing the Parallel runs."),
- (RUN_DATE, "Format change", "Separated adjacent November partner and licensing items from Ignite stage announcements using ignite_scope."),
- (RUN_DATE, "Format change", "LLM.TXT now leads each line with status so a model or reader can filter GA from preview quickly."),
+ (RUN_DATE, "Run 4 (Parallel)", "Added 15 announcements and 3 status updates from a Parallel deep research run (pro processor) and a monitor sweep: Frontier Tuning, Business Applications in Work IQ GA, Foundry Toolboxes and voice agents, Azure Managed Redis, SharePoint content governance, Microsoft 365 Backup, Entra Backup and information barriers."),
+ ("2026-11-23", "Run 3 (Parallel)", "Added 13 announcements from a Parallel deep research run (medium effort after high timed out) and a monitor sweep: Foundry Agent Service, Azure AI Gateway, API Management, Azure Functions, Intune, SharePoint, Edge for Business and Sentinel."),
+ ("2026-11-23", "Run 2", "Added 11 announcements: Teams agent capabilities, Viva Engage and Power Platform. Ids and first_seen are now kept stable between runs."),
+ ("2026-11-18", "Run 1 (first build)", "Created repo. Captured 120 announcements from the live news blog, Book of News and official Microsoft blogs, cross-checked with 3 Parallel test runs and 1 Parallel deep research run."),
+ ("2026-11-18", "Format change", "Added verification, ignite_scope, secondary_source, licensing and status_category columns after reviewing the Parallel runs."),
+ ("2026-11-18", "Format change", "Separated adjacent November partner and licensing items from Ignite stage announcements using ignite_scope."),
+ ("2026-11-18", "Format change", "LLM.TXT now leads each line with status so a model or reader can filter GA from preview quickly."),
 ]
 
 # Excel
